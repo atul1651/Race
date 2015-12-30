@@ -5,7 +5,7 @@ class ResumesController < ApplicationController
 def show
 
 
-
+@resume=Resume.find(params[:id])
 
 end
   def new
@@ -16,7 +16,7 @@ end
     @resume = Resume.new(resume_params)
 
     if @resume.save
-      redirect_to '/resumes/:id', notice: "The resume #{@resume.name} has been uploaded."
+      redirect_to "/resumes/#{@resume.id}",notice:"resume created successfully."
     else
       render "new"
     end

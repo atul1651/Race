@@ -1,0 +1,1789 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><script src="Ruby%20on%20Rails%20Interview%20Questions%20and%20Answers%20%7C%20Srikanta%20Mahapatro_files/count.json" async=""></script><script src="Ruby%20on%20Rails%20Interview%20Questions%20and%20Answers%20%7C%20Srikanta%20Mahapatro_files/count_002.json" async=""></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<title>Ruby on Rails Interview Questions and Answers | Srikanta Mahapatro</title>
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="https://srikantmahapatra.wordpress.com/xmlrpc.php">
+
+<link rel="alternate" type="application/rss+xml" title="Srikanta Mahapatro » Feed" href="https://srikantmahapatra.wordpress.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="Srikanta Mahapatro » Comments Feed" href="https://srikantmahapatra.wordpress.com/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="Srikanta Mahapatro » Ruby on Rails Interview Questions and&nbsp;Answers Comments Feed" href="https://srikantmahapatra.wordpress.com/2013/11/07/ruby-on-rails-interview-questions-and-answers/feed/">
+<script type="text/javascript">
+/* <![CDATA[ */
+function addLoadEvent(func){var oldonload=window.onload;if(typeof window.onload!='function'){window.onload=func;}else{window.onload=function(){oldonload();func();}}}
+/* ]]> */
+</script>
+<link rel="stylesheet" id="all-css-0" href="Ruby%20on%20Rails%20Interview%20Questions%20and%20Answers%20%7C%20Srikanta%20Mahapatro_files/a_003.css" type="text/css" media="all">
+<link rel="stylesheet" id="zoren-bitter-css" href="Ruby%20on%20Rails%20Interview%20Questions%20and%20Answers%20%7C%20Srikanta%20Mahapatro_files/css_002.css" type="text/css" media="all">
+<link rel="stylesheet" id="zoren-open-sans-css" href="Ruby%20on%20Rails%20Interview%20Questions%20and%20Answers%20%7C%20Srikanta%20Mahapatro_files/css.css" type="text/css" media="all">
+<link rel="stylesheet" id="all-css-4" href="Ruby%20on%20Rails%20Interview%20Questions%20and%20Answers%20%7C%20Srikanta%20Mahapatro_files/a_002.css" type="text/css" media="all">
+<link rel="stylesheet" id="print-css-5" href="Ruby%20on%20Rails%20Interview%20Questions%20and%20Answers%20%7C%20Srikanta%20Mahapatro_files/global-print.css" type="text/css" media="print">
+<link rel="stylesheet" id="all-css-6" href="Ruby%20on%20Rails%20Interview%20Questions%20and%20Answers%20%7C%20Srikanta%20Mahapatro_files/a.css" type="text/css" media="all">
+<script type="text/javascript">
+/* <![CDATA[ */
+var LoggedOutFollow = {"invalid_email":"Your subscription did not succeed, please try again with a valid email address."};
+/* ]]> */
+</script>
+<script type="text/javascript" src="Ruby%20on%20Rails%20Interview%20Questions%20and%20Answers%20%7C%20Srikanta%20Mahapatro_files/a_003"></script>
+<link rel="stylesheet" id="all-css-0" href="Ruby%20on%20Rails%20Interview%20Questions%20and%20Answers%20%7C%20Srikanta%20Mahapatro_files/style.css" type="text/css" media="all">
+<!--[if lt IE 8]>
+<link rel='stylesheet' id='highlander-comments-ie7-css'  href='https://s2.wp.com/wp-content/mu-plugins/highlander-comments/style-ie7.css?m=1351637563g&#038;ver=20110606' type='text/css' media='all' />
+<![endif]-->
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://srikantmahapatra.wordpress.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://s1.wp.com/wp-includes/wlwmanifest.xml"> 
+<link rel="prev" title="Make your Rails Code Better using “Metric_fu”" href="https://srikantmahapatra.wordpress.com/2013/10/28/make-your-rails-code-better-using-metric_fu/">
+<link rel="next" title="Explore more about .nil? .empty? .blank? .present? in Ruby on&nbsp;Rails" href="https://srikantmahapatra.wordpress.com/2013/11/08/explore-more-about-nil-empty-blank-present-in-ruby-on-rails/">
+<meta name="generator" content="WordPress.com">
+<link rel="canonical" href="https://srikantmahapatra.wordpress.com/2013/11/07/ruby-on-rails-interview-questions-and-answers/">
+<link rel="shortlink" href="http://wp.me/p3ivFK-25">
+<link rel="alternate" type="application/json+oembed" href="https://public-api.wordpress.com/oembed/1.0/?format=json&amp;url=https%3A%2F%2Fsrikantmahapatra.wordpress.com%2F2013%2F11%2F07%2Fruby-on-rails-interview-questions-and-answers%2F&amp;for=wpcom-auto-discovery"><link rel="alternate" type="application/xml+oembed" href="https://public-api.wordpress.com/oembed/1.0/?format=xml&amp;url=https%3A%2F%2Fsrikantmahapatra.wordpress.com%2F2013%2F11%2F07%2Fruby-on-rails-interview-questions-and-answers%2F&amp;for=wpcom-auto-discovery">
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="Ruby on Rails Interview Questions and Answers">
+<meta property="og:url" content="https://srikantmahapatra.wordpress.com/2013/11/07/ruby-on-rails-interview-questions-and-answers/">
+<meta property="og:description" content="Hey guys, hope you’re having a fine day. Today, my post will be to help answer some of the most difficult technical interview questions; because, interviews can always be stressful even for job see...">
+<meta property="article:published_time" content="2013-11-07T05:00:47+00:00">
+<meta property="article:modified_time" content="2014-07-07T08:49:52+00:00">
+<meta property="og:site_name" content="Srikanta Mahapatro">
+<meta property="og:image" content="https://srikantmahapatra.files.wordpress.com/2013/11/mvc1.png?w=300">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:site" content="@wordpressdotcom">
+<meta name="twitter:image" content="https://srikantmahapatra.files.wordpress.com/2013/11/mvc1.png?w=240">
+<meta name="twitter:card" content="summary">
+<meta property="fb:app_id" content="249643311490">
+<meta property="article:publisher" content="https://www.facebook.com/WordPresscom">
+<link rel="shortcut icon" type="image/x-icon" href="https://s2.wp.com/i/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" type="image/x-icon" href="https://s2.wp.com/i/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="apple-touch-icon-precomposed" href="https://s0.wp.com/i/webclip.png">
+<link rel="openid.server" href="https://srikantmahapatra.wordpress.com/?openidserver=1">
+<link rel="openid.delegate" href="https://srikantmahapatra.wordpress.com/">
+<link rel="search" type="application/opensearchdescription+xml" href="https://srikantmahapatra.wordpress.com/osd.xml" title="Srikanta Mahapatro">
+<link rel="search" type="application/opensearchdescription+xml" href="https://wordpress.com/opensearch.xml" title="WordPress.com">
+<meta name="theme-color" content="#eeeeee">
+		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+				<style type="text/css">
+			.recentcomments a {
+				display: inline !important;
+				padding: 0 !important;
+				margin: 0 !important;
+			}
+
+			table.recentcommentsavatartop img.avatar, table.recentcommentsavatarend img.avatar {
+				border: 0px;
+				margin: 0;
+			}
+
+			table.recentcommentsavatartop a, table.recentcommentsavatarend a {
+				border: 0px !important;
+				background-color: transparent !important;
+			}
+
+			td.recentcommentsavatarend, td.recentcommentsavatartop {
+				padding: 0px 0px 1px 0px;
+				margin: 0px;
+			}
+
+			td.recentcommentstextend {
+				border: none !important;
+				padding: 0px 0px 2px 10px;
+			}
+
+			.rtl td.recentcommentstextend {
+				padding: 0px 10px 2px 0px;
+			}
+
+			td.recentcommentstexttop {
+				border: none;
+				padding: 0px 0px 0px 10px;
+			}
+
+			.rtl td.recentcommentstexttop {
+				padding: 0px 10px 0px 0px;
+			}
+		</style>
+		<meta name="application-name" content="Srikanta Mahapatro"><meta name="msapplication-window" content="width=device-width;height=device-height"><meta name="msapplication-tooltip" content=" "><meta name="msapplication-task" content="name=Subscribe;action-uri=https://srikantmahapatra.wordpress.com/feed/;icon-uri=https://s2.wp.com/i/favicon.ico"><meta name="msapplication-task" content="name=Sign up for a free blog;action-uri=http://wordpress.com/signup/;icon-uri=https://s2.wp.com/i/favicon.ico"><meta name="msapplication-task" content="name=WordPress.com Support;action-uri=http://support.wordpress.com/;icon-uri=https://s2.wp.com/i/favicon.ico"><meta name="msapplication-task" content="name=WordPress.com Forums;action-uri=http://forums.wordpress.com/;icon-uri=https://s2.wp.com/i/favicon.ico"><meta name="title" content="Ruby on Rails Interview Questions and&nbsp;Answers | Srikanta Mahapatro on WordPress.com">
+<meta name="description" content="Hey guys, hope you’re having a fine day. Today, my post will be to help answer some of the most difficult technical interview questions; because, interviews can always be stressful even for job seeker who have attended countless interviews. I believe the best way to reduce the stress is to be prepared. Here are some…">
+<style type="text/css" id="custom-background-css">
+body.custom-background { background-image: url('https://srikantmahapatra.wordpress.com/wp-content/themes/pub/zoren/images/body.png?m=1375425529g'); background-repeat: repeat; background-position: top left; background-attachment: fixed; }
+</style>
+<style type="text/css" id="syntaxhighlighteranchor"></style>
+<script src="Ruby%20on%20Rails%20Interview%20Questions%20and%20Answers%20%7C%20Srikanta%20Mahapatro_files/a.js" async="" type="text/javascript"></script><link rel="stylesheet" type="text/css" id="gravatar-card-css" href="Ruby%20on%20Rails%20Interview%20Questions%20and%20Answers%20%7C%20Srikanta%20Mahapatro_files/hovercard.css"><link rel="stylesheet" type="text/css" id="gravatar-card-services-css" href="Ruby%20on%20Rails%20Interview%20Questions%20and%20Answers%20%7C%20Srikanta%20Mahapatro_files/services.css"><script src="Ruby%20on%20Rails%20Interview%20Questions%20and%20Answers%20%7C%20Srikanta%20Mahapatro_files/a_002.js" async="" type="text/javascript"></script><script type="text/javascript" src="https://secure.gravatar.com/452d7df867fc2cd0fef92ad3b8d8c216.json?callback=Gravatar.fetch_profile_callback"></script></head>
+
+<body class="single single-post postid-129 single-format-standard custom-background mp6 customizer-styles-applied highlander-enabled highlander-light">
+<div id="page" class="hfeed site">
+		<header id="masthead" class="site-header" role="banner">
+		<div class="site-branding">
+			<h1 class="site-title"><a href="https://srikantmahapatra.wordpress.com/" title="Srikanta Mahapatro" rel="home">Srikanta Mahapatro</a></h1>
+			<h2 class="site-description"> </h2>
+		</div>
+
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<h1 class="menu-toggle">Menu</h1>
+			<div class="screen-reader-text skip-link"><a href="#content" title="Skip to content">Skip to content</a></div>
+
+			<div class="menu"><ul class=" nav-menu"><li><a href="https://srikantmahapatra.wordpress.com/">Home</a></li><li class="page_item page-item-1"><a href="https://srikantmahapatra.wordpress.com/about/">About</a></li></ul></div>
+		</nav><!-- #site-navigation -->
+	</header><!-- #masthead -->
+
+	
+	<div id="main" class="site-main">
+	<div id="primary" class="content-area">
+		<div id="content" class="site-content" role="main">
+
+		
+			
+<article id="post-129" class="post-129 post type-post status-publish format-standard hentry category-jquery-2 category-mysql category-ruby-2 category-ruby-on-rails tag-important-interview-questions tag-interview-questions tag-rails tag-rails-interview-questions tag-rails3 tag-ror tag-ror-important-questions tag-ror-interview-questions tag-ruby tag-ruby-interview-questions tag-ruby-on-rails tag-ruby-on-rails-interview-questions">
+
+		<div class="entry-meta clear">
+
+					<span class="entry-format-badge genericon genericon-standard"><span class="screen-reader-text">Standard</span></span>
+		
+		<div class="author-meta ">
+			<p>Posted by</p>
+			<span><a href="https://srikantmahapatra.wordpress.com/author/mailsrikanta/" title="Posts by mailsrikanta" rel="author">mailsrikanta</a></span>
+		</div>
+		<div class="clock-meta">
+			<p>Posted on</p>
+			<span><a href="https://srikantmahapatra.wordpress.com/2013/11/07/" rel="bookmark" title="5:00 am">November 7, 2013</a></span>
+		</div>
+		<div class="category-meta">
+			<p>Posted under</p>
+			<span> <a href="https://srikantmahapatra.wordpress.com/category/jquery-2/" rel="category tag">Jquery</a>, <a href="https://srikantmahapatra.wordpress.com/category/mysql/" rel="category tag">MySql</a>, <a href="https://srikantmahapatra.wordpress.com/category/ruby-2/" rel="category tag">Ruby</a>, <a href="https://srikantmahapatra.wordpress.com/category/ruby-on-rails/" rel="category tag">Ruby on Rails</a></span>
+		</div>
+
+				<div class="discussion-meta">
+			<p>Comments</p>
+			<span><a href="https://srikantmahapatra.wordpress.com/2013/11/07/ruby-on-rails-interview-questions-and-answers/#comments">17 Comments</a></span>
+		</div>
+			</div><!-- .entry-meta -->
+	
+	<h1 class="entry-title">Ruby on Rails Interview Questions and&nbsp;Answers</h1>
+	<div class="entry-content clear">
+		<p>Hey guys, hope you’re having a fine day. Today, my post will be to 
+help answer some of the most difficult technical interview questions; 
+because, interviews can always be stressful even for job seeker who have
+ attended countless interviews. I believe the best way to reduce the 
+stress is to be prepared.</p>
+<p>Here are some of the most frequently asked questions and how to answer them confidently.</p>
+<p><strong>What is agile development</strong></p>
+<p><strong>A:</strong>Agile methodology is anadaptaive methodology, its people<br>
+oriented.<br>
+Here are some of the other characteristices of the Agile<br>
+methodology.<br>
+1. Delivery frequently.<br>
+2. Good ROI for client.<br>
+3. Test frequently.<br>
+4. Collaborative approach.<br>
+Agile methodology is on daily basis report. How much work we have 
+completed on that day and how much work is still pending…it gives the 
+clear picture but the req are not defined beforehanditself completely.. 
+req will be changing….</p>
+<p><strong>Why Ruby on Rails?</strong></p>
+<p><strong>A:</strong> There are lot of advantages of using Ruby on Rails(ROR)<br>
+1. DRY Principal<br>
+2. Convention over Configuration<br>
+3. Gems and Plugins<br>
+4. Scaffolding<br>
+5. Pure OOP Concept</p>
+<p><strong>What is MVC? and how it Works?</strong><br>
+<strong>A:</strong> MVC tends for Model-View-Controller, used by many languages like PHP, Perl, Python etc. The flow goes like below image</p>
+<p><a href="https://srikantmahapatra.files.wordpress.com/2013/11/mvc1.png"><img class="alignnone size-medium wp-image-155" src="Ruby%20on%20Rails%20Interview%20Questions%20and%20Answers%20%7C%20Srikanta%20Mahapatro_files/mvc1.png" alt="mvc1" height="174" width="300"></a></p>
+<p>&nbsp;</p>
+<p>for Example your url is something like this:</p>
+<p><a href="http://localhost:3000/users/new" rel="nofollow">http://localhost:3000/users/new</a></p>
+<p>here users is your controller and new is your method, there must be a file in your views/users folder named <span class="skimlinks-unlinked">new.html.erb</span>,
+ so once the submit button is pressed, User model or whatever defined in
+ the rhtml form_for syntax, will be called and values will be stored 
+into the database.</p>
+<p><strong>What is ORM in Rails?</strong><br>
+<strong>A:</strong> ORM tends for Object-Relationship-Model, it means 
+that your Classes are mapped to table in the database, and Objects are 
+directly mapped to the rows in the table.</p>
+<p><strong>What is Ruby Gems?</strong><br>
+<strong>A.</strong> Ruby Gem is a software package, commonly called a 
+“gem”. Gem contains a packaged Ruby application or library. The Ruby 
+Gems software itself allows you to easily download, install and 
+manipulate gems on your system.</p>
+<p><strong>What is Gemfile and <span class="skimlinks-unlinked">Gemfile.lock</span>?</strong><br>
+<strong>A.</strong> The Gemfile is where you specify which gems you want to use, and lets you specify which versions. The <span class="skimlinks-unlinked">Gemfile.lock</span>
+ file is where Bundler records the exact versions that were installed. 
+This way, when the same library/project is loaded on another machine, 
+running bundle install will look at the <span class="skimlinks-unlinked">Gemfile.lock</span>
+ and install the exact same versions, rather than just using the Gemfile
+ and installing the most recent versions. (Running different versions on
+ different machines could lead to broken tests, etc.) You shouldn’t ever
+ have to directly edit the lock file.<br>
+Get more Explanations on Gem file here.</p>
+<p><strong>What is Active record</strong></p>
+<p><strong>A-</strong>There are many reasons why Active Record is the smart choice<br>
+Simplified configuration and default assumptions (Convention over Configuration).<br>
+Associations among objects.<br>
+Automated mapping b/w tables and classes and b/w columns and attributes.<br>
+Data Validations.<br>
+Callbacks<br>
+Inheritance hierarchies.<br>
+Direct manipulation of data as well as schema objects.<br>
+Database abstraction through adapters.<br>
+Logging support.<br>
+Migration support.<br>
+Active Record integrated in other emerging frameworks like Merb.</p>
+<p><strong>How you run your Rails application without creating databases?</strong><br>
+<strong>A</strong>. You can run your application by uncommenting the line in <span class="skimlinks-unlinked">environment.rb</span><br>
+path=&gt; rootpath conf/<span class="skimlinks-unlinked">environment.rb</span><br>
+config.frameworks- = [action_web_service, :action_mailer, :active_record</p>
+<p><strong>What are the servers supported by ruby on rails?</strong><br>
+<strong>A.</strong> Ruby Supports a number of Rails servers (Mongrel, WEBRICK, PHUSION, Passenger, etc..depending on the specific platforms).<br>
+For each Rails application project, RubyMine provides default Rails 
+run/debug configurations for the production and development 
+environments.</p>
+<p><strong>What is the difference between a plugin and a gem?</strong><br>
+<strong>A.</strong> A gem is just ruby code. It is installed on a 
+machine and it’s available for all ruby applications running on that 
+machine. Rails, rake, json, rspec — are all examples of gems.<br>
+Plugin is also ruby code but it is installed in the application folder and only available for that specific application.<br>
+Sitemap-generator, etc.<br>
+In general, since Rails works well with gems you will find that you 
+would be mostly integrating with gem files and not plugins in general. 
+Most developers release their libraries as gems.</p>
+<p><strong>What is restful in rails</strong></p>
+<p><strong>A</strong>.Stands for REpresentational State Transfer</p>
+<p><a href="https://srikantmahapatra.files.wordpress.com/2014/06/restfulrails.pdf">RESTfulRails</a></p>
+<p><strong>What is passanger</strong><br>
+<strong>A.</strong> Easy and robust deployment of ruby on rails app on appache and ngix webservers<br>
+passenger is an intermediate to run the ruby language in linux server</p>
+<p><strong>&nbsp;What is <span class="skimlinks-unlinked">request.xhr</span>?</strong><br>
+<strong>A:</strong> A <span class="skimlinks-unlinked">request.xhr</span> tells the controller that the new Ajax request has come, It always return TRUE or FALSE</p>
+<p><strong>What is the Difference between Static and Dynamic Scaffolding?</strong><br>
+<strong>A:</strong> The Syntax of Static Scaffold is like this:<br>
+ruby script/generate scaffold User Comment<br>
+Where Comment is the model and User is your controller, So all n all 
+static scaffold takes 2 parameter i.e your controller name and model 
+name, whereas in dynamic scaffolding you have to define controller and 
+model one by one.</p>
+<p><strong>What is Session and Cookies?</strong><br>
+<strong>A:</strong> Session: are used to store user information on the server side.<br>
+cookies: are used to store information on the browser side or we can say client side<br>
+Session : say session[:user] = “srikant” it remains when the browser is not closed</p>
+<p><strong>What is the difference between form_for and form_tag</strong></p>
+<p><strong>A.</strong> form_tag and form_for both are used to submit the form and it’s elements.<br>
+The main difference between these two is the way of managing objects related to that particular model is different.<br>
+form_for<br>
+——-<br>
+We should use “form_for” tag for a specific model<br>
+It performs the “standard http post” which is having fields related to active record (model) objects</p>
+<p>form_tag:<br>
+—–<br>
+It creates a form as a normal form. form_tag also performs the “standard
+ http post” without any model backed and has normal fields. This is 
+mainly used when specific data need to be submitted via form.<br>
+It just creates a form tag and it is best used for non-model forms.</p>
+<p>Example:</p>
+<p>&lt;% form_tag ‘/articles’ do -%&gt;<br>
+&lt;%= text_field_tag “article”, “firstname” %&gt;<br>
+&lt;% end -%&gt;</p>
+<p><strong>Difference between ruby 1.8.7 and 1.9.2</strong></p>
+<p><strong>A.</strong>Ruby 1.9 – Major Features<br>
+—<br>
+Performance<br>
+Threads/Fibers<br>
+Encoding/Unicode<br>
+gems is (mostly) built-in now<br>
+if statements do not introduce scope in Ruby.</p>
+<p>-{“a”,”b”} No Longer Supported<br>
+-<span class="skimlinks-unlinked">Array.to_s</span> Now Contains Punctuation<br>
+-Colon No Longer Valid In When Statements</p>
+<p><strong>What are the engines in mysql</strong><br>
+<strong>Ans:</strong> In previous versions of MySQL, MyISAM was the 
+default storage engine. In our experience, most users never changed the 
+default settings. With MySQL 5.5, InnoDB becomes the default storage 
+engine.</p>
+<p><strong>What is the difference between include and extend</strong><br>
+<strong>A.</strong>include makes the module’s methods available to the instance of a class, while<br>
+extend makes these methods available to the class itself.</p>
+<p><a href="http://lesseverything.com/blog/archives/2012/08/02/the-difference-between-include-and-extend-in-ruby/" rel="nofollow">http://lesseverything.com/blog/archives/2012/08/02/the-difference-between-include-and-extend-in-ruby/</a><br>
+When you use include, the module’s methods are added to the instances of the class. The log method is:</p>
+<p>Not available at the class level<br>
+Available at the instance level<br>
+Not available at the class level again</p>
+<p>—</p>
+<p>When you use extend, the module’s methods are added to the class itself. The log method is:</p>
+<p>Available at the class level.<br>
+Not available at the instance level.<br>
+Available at the class level.<br>
+Reference:<br>
+<a href="http://ionrails.com/2009/09/19/ruby_require-vs-load-vs-include-vs-extend/" rel="nofollow">http://ionrails.com/2009/09/19/ruby_require-vs-load-vs-include-vs-extend/</a><br>
+<a href="http://rubyquicktips.com/post/1133877859/include-vs-extend" rel="nofollow">http://rubyquicktips.com/post/1133877859/include-vs-extend</a></p>
+<p><strong>What is the difference between lambada and proc</strong></p>
+<p><strong>A</strong>.proc and Lambda are used to create code blocks. After creating them, we can pass them around our code, just like variables.</p>
+<p><strong>How to call method dynamically</strong></p>
+<p><strong>A.</strong>[“foo”, “bar”].each do |method|<br>
+<span class="skimlinks-unlinked">MyClass.send(method</span>)<br>
+end</p>
+<p><strong>How to create a method dynamically</strong></p>
+<p><strong>A.</strong>class Message<br>
+[:hello, :goodbye].each do |method_name|<br>
+define_method method_name do |arg|<br>
+“#{method_name} #{arg}”<br>
+end<br>
+end<br>
+end</p>
+<p>#irb<br>
+Message.instance_methods false #=&gt; [:hello, :goodbye]<br>
+<span class="skimlinks-unlinked">Message.new.hello</span> ’emre’ #=&gt; “hello emre”<br>
+<span class="skimlinks-unlinked">Message.new.goodbye</span> ’emre’ #=&gt; “goodbye emre”</p>
+<p><strong>How to use Nested routes in ROR</strong></p>
+<p>The easiest way to create a nested route, is to use the :has_many keyword like that:</p>
+<p># /config/<span class="skimlinks-unlinked">routes.rb</span><br>
+map.resources :projects, :has_many =&gt; :tasks</p>
+<p># and the correspondent task resource<br>
+map.resources :tasks</p>
+<p>Adding the second routes, that defines a RESTful route to :tasks, 
+depends if you would like to allow an access to the Task resource, 
+without the project context, this is not a must.<br>
+Reference<br>
+<a href="http://pandejo.blogspot.in/2009/03/rails-nested-resources-tutorial.html" rel="nofollow">http://pandejo.blogspot.in/2009/03/rails-nested-resources-tutorial.html</a></p>
+<p><strong>What things we can define in the model?</strong><br>
+<strong>A:</strong> There are lot of things you can define in models few are:<br>
+1. Validations (like validates_presence_of, numeracility_of, format_of etc.)<br>
+2. Relationships(like has_one, has_many, HABTM etc.)<br>
+3. Callbacks(like before_save, after_save, before_create etc.)<br>
+4. Suppose you installed a plugin say validation_group, So you can also define validation_group settings in your model<br>
+5. ROR Queries in Sql</p>
+<p><strong>How many Types of Relationships does a Model has?</strong><br>
+<strong>A:</strong> * (1) has_one<br>
+* (2) belongs_to<br>
+* (3) has_many<br>
+* (4) has_many :through</p>
+<p><strong>What is asset pipeline</strong><br>
+<strong>A</strong>.asset pipeline which enables proper organization of CSS and JavaScript</p>
+<p><strong>What is observer in rails</strong></p>
+<p><strong>A:</strong>Observer classes respond to life cycle callbacks to implement trigger-like behavior outside the original class.</p>
+<p>Rails observers are sweet, You can observe multiple models within a single observer</p>
+<p>First, you need to generate your observer:</p>
+<p>command – rails g observer Auditor</p>
+<p>-observer classes are usually stored in app/models with the naming convention of app/models/<span class="skimlinks-unlinked">audit_observer.rb</span>.</p>
+<p>In order to activate an observer, list it in the config.active_record.observers configuration setting in your config/<span class="skimlinks-unlinked">application.rb</span> file.</p>
+<p>config.active_record.observers = :comment_observer, :signup_observer<br>
+Observers will not be invoked unless you define these in your application configuration.<br>
+Reference: <a href="http://apidock.com/rails/ActiveRecord/Observer" rel="nofollow">http://apidock.com/rails/ActiveRecord/Observer</a><br>
+<strong>What is rails sweeper</strong><br>
+<strong>A:</strong><a href="http://dev.mensfeld.pl/2011/07/using-rails-sweepers-outside-controllers/" rel="nofollow">http://dev.mensfeld.pl/2011/07/using-rails-sweepers-outside-controllers/</a><br>
+One sweeper can observe many Models, and any controller can have multiple sweepers.</p>
+<p><strong>Difference between -%&gt; and %&gt; in rails</strong><br>
+<strong>A:</strong>The extra dash makes ERB not output the newline after
+ the closing tag. There’s no difference in your example, but if you have
+ something like this:</p>
+<div>&lt;% if true -%&gt;<br>
+Hi<br>
+&lt;% end -%&gt;</div>
+<p>It’ll produce:</p>
+<div>Hi</div>
+<p>and not this:</p>
+<div>
+<p>Hi</p>
+</div>
+<p><strong>Difference between render and redirect?</strong><br>
+<strong>A:</strong><br>
+Redirect is a method that is used to issue the error message in case the
+ page is not found or it issues a 302 to the browser. Whereas, render is
+ a method used to create the content.</p>
+<p>-Redirect is used to tell the browser to issue a new request. 
+Whereas, render only works in case the controller is being set up 
+properly with the variables that needs to be rendered.</p>
+<p>-Redirect is used when the user needs to redirect its response to 
+some other page or URL. Whereas, render method renders a page and 
+generate a code of 200.</p>
+<p>-Redirect is used as:<br>
+redirect_to: controller =&gt; ‘users’, :action =&gt; ‘new’</p>
+<p>-Render is used as:<br>
+render: partial<br>
+render: new -&gt; this will call the template named as <span class="skimlinks-unlinked">new.rhtml</span> without the need of redirecting it to the new action.</p>
+<p><strong>What is the use of rake db:reset</strong></p>
+<p><strong>A.</strong>db:create——- creates the database for the current env<br>
+db:create:all ———creates the databases for all envs<br>
+db:drop ———-drops the database for the current env<br>
+db:drop:all ———-drops the databases for all envs<br>
+db:migrate ———-runs migrations for the current env that have not run yet<br>
+db:migrate:up ——–runs one specific migration<br>
+db:migrate:down ——-rolls back one specific migration<br>
+db:migrate:status —–shows current migration status<br>
+db:migrate:rollback —rolls back the last migration<br>
+db:forward ————advances the current schema version to the next one<br>
+db:seed (only) ———runs the db/<span class="skimlinks-unlinked">seed.rb</span> file<br>
+db:schema:load ————loads the schema into the current env’s database<br>
+db:schema:dump ———dumps the current env’s schema (and seems to create the db aswell)</p>
+<p>db:setup ————-runs db:schema:load, db:seed</p>
+<p>db:reset ———-runs db:drop db:setup<br>
+db:migrate:redo ———runs (db:migrate:down db:migrate:up) or 
+(db:migrate:rollback db:migrate:migrate) depending on the specified 
+migration<br>
+db:migrate:reset ——runs db:drop db:create db:migrate</p>
+<p><strong>What is eagerloading</strong><br>
+<strong>A.</strong>-One way to improve performance is to reduce the number of database queries through eager loading.<br>
+-You can know where we need eager loading through “Bullet’ Gem</p>
+<p><strong>How to use sql db or mysql db. without defining it in the <span class="skimlinks-unlinked">database.yml</span></strong><br>
+<strong>A.</strong></p>
+<p><strong>What are helpers and how to use helpers in ROR?</strong><br>
+<strong>A.</strong> Helpers (“view helpers”) are modules that provide 
+methods which are automatically usable in your view. They provide 
+shortcuts to commonly used display code and a way for you to keep the 
+programming out of your views. The purpose of a helper is to simplify 
+the view. It’s best if the view file (RHTML/RXML) is short and sweet, so
+ you can see the structure of the output.</p>
+<p><strong>What is Active Record?</strong><br>
+<strong>A.</strong> Active Record are like Object Relational 
+Mapping(ORM), where classes are mapped to table and objects are mapped 
+to colums in the table</p>
+<p><strong>Ruby Supports Single Inheritence/Multiple Inheritence or Both?</strong><br>
+<strong>A.</strong> Ruby Supports only Single Inheritnece</p>
+<p><strong>How many types of callbacks available in ROR?</strong><br>
+<strong>A.</strong> * (-) save<br>
+* (-) valid<br>
+* (1) before_validation<br>
+* (2) before_validation_on_create<br>
+* (-) validate<br>
+* (-) validate_on_create<br>
+* (3) after_validation<br>
+* (4) after_validation_on_create<br>
+* (5) before_save<br>
+* (6) before_create<br>
+* (-) create<br>
+* (7) after_create<br>
+* (8) after_save</p>
+<p><strong>How to use two database into a Single Application?</strong></p>
+<p><strong>A.</strong> <a href="http://magicmodels.rubyforge.org/magic_multi_connections/" rel="nofollow">http://magicmodels.rubyforge.org/magic_multi_connections/</a>,
+ According to this link : ActiveRecord models are allowed one connection
+ to a database at a time, per class. Ruby on Rails sets up the default 
+connection based on your <span class="skimlinks-unlinked">database.yml</span> configuration to automatically select development, test or production.<br>
+But, what if you want to access two or more databases – have 2+ 
+connections open – at the same time. ActiveRecord requires that you 
+subclass ActiveRecord::Base.<br>
+That prevents you doing migrations from one database to another. It 
+prevents you using one set of model classes on two or more databases 
+with the same schema.<br>
+Magic Multi-Connections allows you to write your models once, and use 
+them for multiple Rails databases at the same time. How? Using magical 
+namespacing.</p>
+<p>To do this :<br>
+[A] sudo gem install magic_multi_connections<br>
+[B] require ‘magic_multi_connections’<br>
+Add the following to the bottom of your <span class="skimlinks-unlinked">environment.rb</span> file<br>
+You can also find examples on this link : <a href="http://magicmodels.rubyforge.org/magic_multi_connections/" rel="nofollow">http://magicmodels.rubyforge.org/magic_multi_connections/</a></p>
+<p>“Updated Set of Questions for Rails 3”</p>
+<p><strong>What is the difference between the Rails version 2 and 3?</strong><br>
+<strong>A.</strong> * (1) Introduction of bundler (New way to manage your gem dependencies)<br>
+* (2) Gemfile and <span class="skimlinks-unlinked">Gemfile.lock</span> (Where all your gem dependencies lies, instead of <span class="skimlinks-unlinked">environment.rb</span>)<br>
+* (3) A new .rb file in config/ folder, named as <span class="skimlinks-unlinked">application.rb</span> (Which has everything that previously <span class="skimlinks-unlinked">environment.rb</span> had)<br>
+* (4) Change in SQL Structure: <span class="skimlinks-unlinked">Model.where(:activated</span> =&gt; true)<br>
+* (5) All the mailer script will now be in app/mailers folder, earlier we kept inside app/models.<br>
+* (6) Rails3-UJS support. for links and forms to work as AJAX, instead 
+of writing complex lines of code, we write :remote =&gt; true<br>
+* (7) HTML 5 support.<br>
+* (8) Changes in the model based validation syntax: validates :name, :presence =&gt; true<br>
+* (9) Ability to install windows/ruby/jruby/development/production specific gems to Gemfile.<br>
+group :production do<br>
+gem ‘will_paginate’<br>
+end</p>
+<p><strong>What is bundler?</strong><br>
+<strong>A:</strong> Bundler is a new concept introduced in Rails3, which
+ helps to you manage your gems for the application. After specifying 
+gems in your Gemfile, you need to do a bundle install. If the gem is 
+available in the system, bundle will use that else it will pick up from 
+the <span class="skimlinks-unlinked">rubygems.org</span>.</p>
+<p><strong>What is the Newest approach for find(:all) in Rails 3?</strong><br>
+<strong>A:</strong> <span class="skimlinks-unlinked">Model.where(:activated</span> =&gt; true)</p>
+<p><strong>Ruby Interview Questions :</strong></p>
+<p><strong>What are the variable in ruby</strong></p>
+<p><strong>A.</strong>1 Local Variables – foobar<br>
+2 Instance Variables – @foobar<br>
+3 Class Variables – @@foobar<br>
+4 Global Variables – $foobar<br>
+——–<br>
+Name Begins With Variable Scope<br>
+$ A global variable<br>
+@ An instance variable<br>
+[a-z] or _ A local variable<br>
+[A-Z] A constant<br>
+@@ A class variable</p>
+<p><strong>Difference between “and” and &amp;&amp; in Ruby?</strong><br>
+<strong>A.</strong>and is the same as &amp;&amp; but with lower precedence.</p>
+<p><strong>Difference between method overloading and method overwriting</strong></p>
+<p><strong>A.</strong>def: In Method Overloading, Methods of the same 
+class shares the same name but each method must have different number of
+ parameters or parameters having different types and order.</p>
+<p>Method Overloading means more than one method shares the same name in the class but having different signature.<br>
+In Method Overloading, methods must have different signature.<br>
+Method Overloading does not require more than one class for overloading.</p>
+<p>Def:In Method Overriding, sub class have the same method with same 
+name and exactly the same number and type of parameters and same return 
+type as a super class.</p>
+<p>Method Overriding means method of base class is re-defined in the derived class having same signature.<br>
+In Method Overriding, methods must have same signature.<br>
+Method Overriding requires at least two classes for overriding.</p>
+<p><strong>What is the Notation used for denoting class variables in Ruby?</strong><br>
+<strong>A:</strong>We can know a variable as “Class variable’s” if its preceeded by @@ symbols.</p>
+<p><strong>What is the use of Destructive Method?</strong><br>
+<strong>A:</strong>Distructive methods are used to change the object value permanently by itself using bang (!) operator.<br>
+‘sort’ returns a new array and leaves the original unchanged.<br>
+‘sort!’ returns the same array with the modification.<br>
+The ‘!’ indicates it’s a destructive method. It will overwrite the current array with the new result and returns it.</p>
+<p><strong>What is the use of load and require in Ruby?</strong><br>
+<strong>A:</strong>The require() method is quite similar to load(), but it’s meant for a different purpose.<br>
+You use load() to execute code, and you use require() to import libraries.</p>
+<p><strong>What is the use of Global Variable in Ruby?</strong><br>
+<strong>A:</strong>Syntatically, a global variable is a variable whose name begins with $<br>
+Global variables in Ruby are accessible from anywhere in the Ruby program, regardless of where they are declared.<br>
+$welcome = “Welcome to Ruby Essentials”</p>
+<p><strong>How does nil and false differ?</strong><br>
+<strong>A:</strong>nil cannot be a value, where as a false can be a value<br>
+A method returns true or false in case of a predicate, other wise nil is returned.<br>
+false is a boolean data type, where as nil is not.<br>
+nil is an object for NilClass, where as false is an object of for FalseClass</p>
+<p><strong>What is the diffence betweet symbol and string</strong><br>
+<strong>A.</strong> Symbols have two nice properties compared to strings which can save you memory and CPU time<br>
+The difference remains in the object_id, memory and process time for both of them when used together at one time<br>
+Strings are considered as mutable objects. Whereas, symbols, belongs to the category of immutable<br>
+Strings objects are mutable so that it takes only the assignments to 
+change the object information. Whereas, information of, immutable 
+objects gets overwritten</p>
+<p><strong style="line-height:1.5;">How to use super key word</strong></p>
+<p><strong>A.</strong>Ruby uses the super keyword to call the superclass implementation of the current method.<br>
+Within the body of a method, calls to super acts just like a call to that original method.<br>
+The search for a method body starts in the superclass of the object that was found to contain the original method.<br>
+def url=(addr)<br>
+super (<span class="skimlinks-unlinked">addr.blank</span>? || addr.starts_with?(‘http’)) ? addr : <a href="http:///#" rel="nofollow">http://#</a>{addr}<br>
+end</p>
+<p><strong>How is visibility of methods change in Ruby?</strong></p>
+<p><strong>What is a Class Instance Variable</strong></p>
+<p><strong>What are the rules and conventions to be followed in Ruby for naming a method?</strong></p>
+<p><strong>How is class method defined in Ruby?</strong></p>
+<p><strong>What are the Operators available in Ruby?</strong></p>
+<p><strong>What are the looping structure available in Ruby?</strong></p>
+<p><strong>What is the scope of local variable?</strong></p>
+<p><strong>What are the OOP supported by Ruby?</strong></p>
+<p><strong>If Ruby over PHP, Why?</strong></p>
+<p><strong>Garbage collection in Ruby?</strong></p>
+<p><strong>Environment Variables in Ruby?</strong></p>
+<p><strong>What are Float, Dig and Max?</strong><br>
+<strong>Ans.</strong><strong>Float</strong> class is used whenever the 
+function changes constantly. It acts as a sub class of numeric. They 
+represent real characters by making use of the native architecture of 
+the double precision floating point.<br>
+<strong>Max</strong> is used whenever there is a huge need of Float.<br>
+<strong>Dig</strong> is used whenever you want to represent a float in decimal digits.<br>
+<strong>What is Ruby Code blocks?</strong></p>
+<p><strong>What kind of conditions ruby support?</strong></p>
+<p><strong>Difference between puts and print</strong><br>
+<strong>Ans.</strong>puts adds a newline to the end of the output. print does not.</p>
+<p><strong>Is there any technology apart from agile which we can use?</strong></p>
+<p><strong>What are the servers supported by ruby on rails application?</strong></p>
+<p>Passenger running on Apache. Easy to set up, low memory usage, and well supported.<br>
+nginx with puma(it is a multi-threaded high performance webserver written in Ruby).</p>
+<p><strong>What is Meta-programming? How you are using it inside your rails application?</strong></p>
+<p><strong>What is has_many?</strong><br>
+<strong>Ans.</strong> It is a way of defining relationships among 
+models. Correct, and Do you guys really know has_many is also an example
+ of Meta-programming? Wondering, How?</p>
+<p><strong>What is TDD and BDD?</strong><br>
+<strong>A:</strong> Test-Driven-Development and Behavior-Driven-Development</p>
+<p><strong>What is rspec, cucumber and Watir? And what it has to do with TDD and BDD?</strong></p>
+<p><strong><span style="line-height:1.5;">What is the difference between ‘&amp;&amp;’ and ‘||’ operators?</span></strong></p>
+<p><strong>A.</strong> “&amp;&amp;” has higher precedence than “||” like
+ in most other mainstream languages; but “or” and “and” in ruby have the
+ same(!) precedence level!<br>
+so if you write<br>
+(func1 || func2 &amp;&amp; func3), it’s (func1 || (func2 &amp;&amp; func3))<br>
+but<br>
+(func1 or func2 and func3) is interpreted as ((func1 or func2) and func3)<br>
+because of shorcircuiting, if func1 is true, both func2 and func3 won’t be called at all in the first example<br>
+but in the second example func3 WILL be called!<br>
+this difference is subtile enough that I really do not recommend newbies to use “and” and “or” in ruby at all.</p>
+<p><strong>What is the Purpose of “!” and “?” at the end of method names?</strong><br>
+<strong>A.</strong> It’s “just sugarcoating” for readability, but they do have common meanings:<br>
+Methods ending in ! perform some permanent or potentially dangerous change; for example:<br>
+Enumerable#sort returns a sorted version of the object while Enumerable#sort! sorts it in place.<br>
+In Rails, ActiveRecord::Base#save returns false if saving failed, while ActiveRecord::Base#save! raises an exception.<br>
+Kernel::exit causes a script to exit, while Kernel::exit! does so immediately, bypassing any exit handlers.<br>
+Methods ending in ? return a boolean, which makes the code flow even more intuitively like a sentence — if <span class="skimlinks-unlinked">number.zero</span>? reads like “if the number is zero”, but if <span class="skimlinks-unlinked">number.zero</span> just looks weird.<br>
+In your example, name.reverse evaluates to a reversed string, but only 
+after the name.reverse! line does the name variable actually contain the
+ reversed name. name.is_binary_data? looks like “is name binary data?”.</p>
+<p>Just remember it in simple<br>
+In Ruby the ? means that the method is going to return a boolean and the
+ ! modifies the object it was called on. They are there to improve 
+readability when looking at the code.</p>
+<p><strong>How can you list all routes for an application?</strong><br>
+<strong>A)</strong> By writing rake routes in the terminal we can list out all routes in an application.</p>
+<p><strong>What is rake?</strong><br>
+<strong>A)</strong> rake is command line utility of rails. “Rake is Ruby
+ Make, a standalone Ruby utility that replaces the Unix utility ‘make’, 
+and uses a ‘Rakefile’ and .rake files to build up a list of tasks. In 
+Rails, Rake is used for common administration tasks, especially 
+sophisticated ones that build off of each other.”</p>
+<p>Putting in simple word : “rake will execute different tasks(basically
+ a set of ruby code) specified in any file with .rake extension from 
+comandline.”</p>
+<p><strong>What are the differences between MongoDB and Redis?</strong></p>
+<p><strong>A)</strong> Redis is a key value store while mongoDB is a document store.<br>
+<strong>&nbsp; 1.Data model</strong><br>
+MongoDB<br>
+Document oriented, JSON-like. Each document has unique key within a collection. Documents are heterogenous.<br>
+Redis<br>
+Key-value, values are:</p>
+<ul>
+<li>Lists of strings</li>
+<li>Sets of strings (collections of non-repeating unsorted elements)</li>
+<li>Sorted sets of strings (collections of non-repeating elements ordered by a floating-point number called score)</li>
+<li>Hashes where keys are strings and values are either strings or integers&nbsp;After Wikipedia.</li>
+</ul>
+<p><strong>&nbsp; &nbsp;2.Storage</strong><br>
+MongoDB<br>
+Disk, memory-mapped files, index should fit in RAM.<br>
+Redis<br>
+Typically in-memory.<br>
+<strong>3.Querying</strong><br>
+MongoDB<br>
+By key, by any value in document (indexing possible), Map/Reduce.<br>
+Redis<br>
+By key.</p>
+<p><strong>What are the new features of Rails4?</strong><br>
+<strong>A)</strong><br>
+1. Ruby Versions<br>
+2. ‘Gemfile’<br>
+3. ‘Threadsafe’ by Default<br>
+4. No More vendor/plugins<br>
+5. New Testing Directories<br>
+6. Strong Parameters<br>
+7. Renamed Callback<br>
+10. Queuing system<br>
+13. Cache Digests (Russian Doll Caching)<br>
+14. Turbolinks</p>
+<p><strong>More Questions and Answers of this will be published very soon :)&nbsp;</strong></p>
+<div id="jp-post-flair" class="sharedaddy sd-like-enabled sd-sharing-enabled"><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon-text sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-129" class="share-facebook sd-button share-icon" href="https://srikantmahapatra.wordpress.com/2013/11/07/ruby-on-rails-interview-questions-and-answers/?share=facebook&amp;nb=1" target="_blank" title="Share on Facebook"><span>Facebook<span class="share-count">5</span></span></a></li><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-129" class="share-twitter sd-button share-icon" href="https://srikantmahapatra.wordpress.com/2013/11/07/ruby-on-rails-interview-questions-and-answers/?share=twitter&amp;nb=1" target="_blank" title="Click to share on Twitter"><span>Twitter</span></a></li><li class="share-linkedin"><a rel="nofollow" data-shared="sharing-linkedin-129" class="share-linkedin sd-button share-icon" href="https://srikantmahapatra.wordpress.com/2013/11/07/ruby-on-rails-interview-questions-and-answers/?share=linkedin&amp;nb=1" target="_blank" title="Click to share on LinkedIn"><span>LinkedIn<span class="share-count">5</span></span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-129" class="share-google-plus-1 sd-button share-icon" href="https://srikantmahapatra.wordpress.com/2013/11/07/ruby-on-rails-interview-questions-and-answers/?share=google-plus-1&amp;nb=1" target="_blank" title="Click to share on Google+"><span>Google</span></a></li><li class="share-email share-service-visible"><a rel="nofollow" data-shared="" class="share-email sd-button share-icon" href="https://srikantmahapatra.wordpress.com/2013/11/07/ruby-on-rails-interview-questions-and-answers/?share=email&amp;nb=1" target="_blank" title="Click to email this to a friend"><span>Email</span></a></li><li class="share-end"></li></ul></div></div></div><div class="sharedaddy sd-block sd-like jetpack-likes-widget-wrapper jetpack-likes-widget-loaded" id="like-post-wrapper-48740664-129-5673f22d9ebe8" data-src="//widgets.wp.com/likes/#blog_id=48740664&amp;post_id=129&amp;origin=srikantmahapatra.wordpress.com&amp;obj_id=48740664-129-5673f22d9ebe8" data-name="like-post-frame-48740664-129-5673f22d9ebe8"><h3 class="sd-title">Like this:</h3><div class="likes-widget-placeholder post-likes-widget-placeholder" style="height: 55px; display: none;"><span class="button"><span>Like</span></span> <span class="loading">Loading...</span></div><iframe class="post-likes-widget jetpack-likes-widget" name="like-post-frame-48740664-129-5673f22d9ebe8" src="//widgets.wp.com/likes/#blog_id=48740664&amp;post_id=129&amp;origin=srikantmahapatra.wordpress.com&amp;obj_id=48740664-129-5673f22d9ebe8" frameborder="0" height="55px" width="100%"></iframe><span class="sd-text-color"></span><a class="sd-link-color"></a></div>
+<div style="display: block;" id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+<div class="jp-relatedposts-items jp-relatedposts-items-minimal"><p class="jp-relatedposts-post jp-relatedposts-post0" data-post-id="135" data-post-format="false"><span class="jp-relatedposts-post-title"><a data-position="0" data-origin="129" rel="nofollow" title="Explore more about .nil? .empty? .blank? .present? in Ruby on Rails
+
+nil?, empty? and blank? and .present? are little bit confusing. We as a Developer needs to be careful in using them and it is better that we digest the details before using it. .nil? It is Ruby method It can be used on any object and is true if the…" href="https://srikantmahapatra.wordpress.com/2013/11/08/explore-more-about-nil-empty-blank-present-in-ruby-on-rails/" class="jp-relatedposts-post-a">Explore more about .nil? .empty? .blank? .present? in Ruby on Rails</a></span><span class="jp-relatedposts-post-context">In "Ruby"</span></p><p class="jp-relatedposts-post jp-relatedposts-post1" data-post-id="100" data-post-format="false"><span class="jp-relatedposts-post-title"><a data-position="1" data-origin="129" rel="nofollow" title="Active Record Callbacks in Rails
+
+Callbacks are a great technique for achieving simplicity and flexibility. Callbacks provide a means of hooking into an ActiveRecord object's life-cycle. A hook is a technique that lets you trap some Ruby event with ActiveRecord, such as object creation. Callbacks are hooks that allow you to trigger logic before or…" href="https://srikantmahapatra.wordpress.com/2013/10/10/active-record-callbacks-in-rails/" class="jp-relatedposts-post-a">Active Record Callbacks in Rails</a></span><span class="jp-relatedposts-post-context">In "Ruby"</span></p><p class="jp-relatedposts-post jp-relatedposts-post2" data-post-id="102" data-post-format="false"><span class="jp-relatedposts-post-title"><a data-position="2" data-origin="129" rel="nofollow" title="Validate RSS or ATOM feeds using FeedValidator in Rails
+
+FeedValidator is an interface to the W3C Feed Validation online service based on its SOAP 1.2 support. It helps to find errors in RSS or ATOM feeds. In Rails app this can be done installing the gem. Step#1 You can install FeedValidator as a gem by writing in gem file:…" href="https://srikantmahapatra.wordpress.com/2013/10/10/validate-rss-or-atom-feeds-using-feedvalidator-in-rails/" class="jp-relatedposts-post-a">Validate RSS or ATOM feeds using FeedValidator in Rails</a></span><span class="jp-relatedposts-post-context">In "Ruby"</span></p></div></div></div>				<div class="taglist"><ul class="clear"><li><a href="https://srikantmahapatra.wordpress.com/tag/important-interview-questions/" rel="tag">important interview questions</a></li><li><a href="https://srikantmahapatra.wordpress.com/tag/interview-questions/" rel="tag">Interview questions</a></li><li><a href="https://srikantmahapatra.wordpress.com/tag/rails/" rel="tag">rails</a></li><li><a href="https://srikantmahapatra.wordpress.com/tag/rails-interview-questions/" rel="tag">Rails interview questions</a></li><li><a href="https://srikantmahapatra.wordpress.com/tag/rails3/" rel="tag">rails3</a></li><li><a href="https://srikantmahapatra.wordpress.com/tag/ror/" rel="tag">ROR</a></li><li><a href="https://srikantmahapatra.wordpress.com/tag/ror-important-questions/" rel="tag">ror important questions</a></li><li><a href="https://srikantmahapatra.wordpress.com/tag/ror-interview-questions/" rel="tag">ROR interview questions</a></li><li><a href="https://srikantmahapatra.wordpress.com/tag/ruby/" rel="tag">ruby</a></li><li><a href="https://srikantmahapatra.wordpress.com/tag/ruby-interview-questions/" rel="tag">ruby interview questions</a></li><li><a href="https://srikantmahapatra.wordpress.com/tag/ruby-on-rails/" rel="tag">Ruby on Rails</a></li><li><a href="https://srikantmahapatra.wordpress.com/tag/ruby-on-rails-interview-questions/" rel="tag">Ruby on rails interview questions</a></li></ul></div><!-- .entry-content -->
+
+</div></article><!-- #post-129 -->
+				<nav role="navigation" id="nav-below" class="navigation-post clear">
+		<h1 class="screen-reader-text">Post navigation</h1>
+
+	
+		<div class="previous"><a href="https://srikantmahapatra.wordpress.com/2013/10/28/make-your-rails-code-better-using-metric_fu/" rel="prev"><span class="meta-nav">←</span> Make your Rails Code Better using “Metric_fu”</a></div>		<div class="next"><a href="https://srikantmahapatra.wordpress.com/2013/11/08/explore-more-about-nil-empty-blank-present-in-ruby-on-rails/" rel="next">Explore more about .nil? .empty? .blank? .present? in Ruby on&nbsp;Rails <span class="meta-nav">→</span></a></div>
+	
+	</nav><!-- #nav-below -->
+	
+			
+
+	<div id="comments" class="comments-area">
+
+	
+			<h2 class="comments-title">
+			17 thoughts on “<span>Ruby on Rails Interview Questions and&nbsp;Answers</span>”		</h2>
+
+		
+		<ol class="commentlist">
+				<li class="comment byuser comment-author-deepakrip007 even thread-even depth-1 clear highlander-comment" id="li-comment-7">
+		<article id="comment-7" class="comment">
+			<footer>
+				<div class="comment-author vcard">
+					<img id="grav-d516bcae02005ecd06ae68bfcb105da5-0" alt="" src="Ruby%20on%20Rails%20Interview%20Questions%20and%20Answers%20%7C%20Srikanta%20Mahapatro_files/d516bcae02005ecd06ae68bfcb105da5.jpeg" class="avatar avatar-40 grav-hashed grav-hijack" height="40" width="40">					<cite class="fn"><a href="http://deepakrdash.wordpress.com/" rel="external nofollow" class="url">deepakrdash</a></cite> <span class="says">says:</span>				</div><!-- .comment-author .vcard -->
+				
+				<div class="comment-meta commentmetadata">
+					<a href="https://srikantmahapatra.wordpress.com/2013/11/07/ruby-on-rails-interview-questions-and-answers/#comment-7"><time datetime="2013-11-07T09:48:02+00:00">
+					November 7, 2013 at 9:48 am					</time></a>
+									</div><!-- .comment-meta .commentmetadata -->
+			</footer>
+
+			<div class="comment-content"><p>Nice blog srikant….thanks for sharing</p>
+</div>
+			<div class="reply"><a rel="nofollow" class="comment-reply-link" href="https://srikantmahapatra.wordpress.com/2013/11/07/ruby-on-rails-interview-questions-and-answers/?replytocom=7#respond" onclick='return addComment.moveForm( "comment-7", "7", "respond", "129" )' aria-label="Reply to deepakrdash">Reply</a></div>		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-sutocom odd alt thread-odd thread-alt depth-1 clear highlander-comment" id="li-comment-8">
+		<article id="comment-8" class="comment">
+			<footer>
+				<div class="comment-author vcard">
+					<img id="grav-1396112f7db4689ffa5f2595d7b7fccf-0" alt="" src="Ruby%20on%20Rails%20Interview%20Questions%20and%20Answers%20%7C%20Srikanta%20Mahapatro_files/1396112f7db4689ffa5f2595d7b7fccf.jpeg" class="avatar avatar-40 grav-hashed grav-hijack" height="40" width="40">					<cite class="fn"><a href="http://www.sutocom.net/" rel="external nofollow" class="url">SutoCom</a></cite> <span class="says">says:</span>				</div><!-- .comment-author .vcard -->
+				
+				<div class="comment-meta commentmetadata">
+					<a href="https://srikantmahapatra.wordpress.com/2013/11/07/ruby-on-rails-interview-questions-and-answers/#comment-8"><time datetime="2013-11-07T13:24:53+00:00">
+					November 7, 2013 at 1:24 pm					</time></a>
+									</div><!-- .comment-meta .commentmetadata -->
+			</footer>
+
+			<div class="comment-content"><p>Reblogged this on <a href="http://sutocom.net/2013/11/07/ruby-on-rails-interview-questions-and-answers/" rel="nofollow">Sutoprise Avenue, A SutoCom Source</a>.</p>
+</div>
+			<div class="reply"><a rel="nofollow" class="comment-reply-link" href="https://srikantmahapatra.wordpress.com/2013/11/07/ruby-on-rails-interview-questions-and-answers/?replytocom=8#respond" onclick='return addComment.moveForm( "comment-8", "8", "respond", "129" )' aria-label="Reply to SutoCom">Reply</a></div>		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-sumanranjanpanda even thread-even depth-1 clear highlander-comment" id="li-comment-9">
+		<article id="comment-9" class="comment">
+			<footer>
+				<div class="comment-author vcard">
+					<img id="grav-8edeb60932f9f60703eeddac82d49bae-0" alt="" src="Ruby%20on%20Rails%20Interview%20Questions%20and%20Answers%20%7C%20Srikanta%20Mahapatro_files/8edeb60932f9f60703eeddac82d49bae.jpeg" class="avatar avatar-40 grav-hashed grav-hijack" height="40" width="40">					<cite class="fn"><a href="http://sumanranjanpanda.wordpress.com/" rel="external nofollow" class="url">sumanranjanpanda</a></cite> <span class="says">says:</span>				</div><!-- .comment-author .vcard -->
+				
+				<div class="comment-meta commentmetadata">
+					<a href="https://srikantmahapatra.wordpress.com/2013/11/07/ruby-on-rails-interview-questions-and-answers/#comment-9"><time datetime="2013-11-10T03:40:50+00:00">
+					November 10, 2013 at 3:40 am					</time></a>
+									</div><!-- .comment-meta .commentmetadata -->
+			</footer>
+
+			<div class="comment-content"><p>Reblogged this on <a href="http://sumanranjanpanda.wordpress.com/2013/11/10/ruby-on-rails-interview-questions-and-answers/" rel="nofollow">Suman Ranjan Panda</a>.</p>
+</div>
+			<div class="reply"><a rel="nofollow" class="comment-reply-link" href="https://srikantmahapatra.wordpress.com/2013/11/07/ruby-on-rails-interview-questions-and-answers/?replytocom=9#respond" onclick='return addComment.moveForm( "comment-9", "9", "respond", "129" )' aria-label="Reply to sumanranjanpanda">Reply</a></div>		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-broberts65 odd alt thread-odd thread-alt depth-1 clear highlander-comment" id="li-comment-10">
+		<article id="comment-10" class="comment">
+			<footer>
+				<div class="comment-author vcard">
+					<img id="grav-128b10f2db595a6d798b64ccb166fda1-0" alt="" src="Ruby%20on%20Rails%20Interview%20Questions%20and%20Answers%20%7C%20Srikanta%20Mahapatro_files/128b10f2db595a6d798b64ccb166fda1.jpeg" class="avatar avatar-40 grav-hashed grav-hijack" height="40" width="40">					<cite class="fn"><a href="http://bob-roberts.net/" rel="external nofollow" class="url">Bob Roberts</a></cite> <span class="says">says:</span>				</div><!-- .comment-author .vcard -->
+				
+				<div class="comment-meta commentmetadata">
+					<a href="https://srikantmahapatra.wordpress.com/2013/11/07/ruby-on-rails-interview-questions-and-answers/#comment-10"><time datetime="2013-11-22T03:08:49+00:00">
+					November 22, 2013 at 3:08 am					</time></a>
+									</div><!-- .comment-meta .commentmetadata -->
+			</footer>
+
+			<div class="comment-content"><p>Reblogged this on <a href="http://bob-roberts.net/2013/11/21/ruby-on-rails-interview-questions-and-answers/" rel="nofollow">My Corner of the Web</a>.</p>
+</div>
+			<div class="reply"><a rel="nofollow" class="comment-reply-link" href="https://srikantmahapatra.wordpress.com/2013/11/07/ruby-on-rails-interview-questions-and-answers/?replytocom=10#respond" onclick='return addComment.moveForm( "comment-10", "10", "respond", "129" )' aria-label="Reply to Bob Roberts">Reply</a></div>		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1 clear highlander-comment" id="li-comment-16">
+		<article id="comment-16" class="comment">
+			<footer>
+				<div class="comment-author vcard">
+					<img id="grav-0777f56fccdaf2a3b5a9831f52380d9e-0" alt="" src="Ruby%20on%20Rails%20Interview%20Questions%20and%20Answers%20%7C%20Srikanta%20Mahapatro_files/0777f56fccdaf2a3b5a9831f52380d9e.png" class="avatar avatar-40 grav-hashed grav-hijack" height="40" width="40">					<cite class="fn"><a href="http://htt//www.janakprajapati.com" rel="external nofollow" class="url">Janak</a></cite> <span class="says">says:</span>				</div><!-- .comment-author .vcard -->
+				
+				<div class="comment-meta commentmetadata">
+					<a href="https://srikantmahapatra.wordpress.com/2013/11/07/ruby-on-rails-interview-questions-and-answers/#comment-16"><time datetime="2014-02-21T17:34:10+00:00">
+					February 21, 2014 at 5:34 pm					</time></a>
+									</div><!-- .comment-meta .commentmetadata -->
+			</footer>
+
+			<div class="comment-content"><p>very nice it helped me to clear a basic concepts of ROR. Thanks</p>
+</div>
+			<div class="reply"><a rel="nofollow" class="comment-reply-link" href="https://srikantmahapatra.wordpress.com/2013/11/07/ruby-on-rails-interview-questions-and-answers/?replytocom=16#respond" onclick='return addComment.moveForm( "comment-16", "16", "respond", "129" )' aria-label="Reply to Janak">Reply</a></div>		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="post pingback">
+		Pingback: <a href="http://isr3alloveyul3ni.wordpress.com/2014/03/12/ror/" rel="external nofollow" class="url">RoR | thoughs</a>	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1 clear highlander-comment" id="li-comment-19">
+		<article id="comment-19" class="comment">
+			<footer>
+				<div class="comment-author vcard">
+					<img id="grav-f8c64f98c6eac3470ebfe0986a00b5e9-0" alt="" src="Ruby%20on%20Rails%20Interview%20Questions%20and%20Answers%20%7C%20Srikanta%20Mahapatro_files/f8c64f98c6eac3470ebfe0986a00b5e9.png" class="avatar avatar-40 grav-hashed grav-hijack" height="40" width="40">					<cite class="fn"><a href="http://cvsbr.com/" rel="external nofollow" class="url">Ramu</a></cite> <span class="says">says:</span>				</div><!-- .comment-author .vcard -->
+				
+				<div class="comment-meta commentmetadata">
+					<a href="https://srikantmahapatra.wordpress.com/2013/11/07/ruby-on-rails-interview-questions-and-answers/#comment-19"><time datetime="2014-03-12T20:48:56+00:00">
+					March 12, 2014 at 8:48 pm					</time></a>
+									</div><!-- .comment-meta .commentmetadata -->
+			</footer>
+
+			<div class="comment-content"><p>Thanks for sharing valuable information.. It’s help to me…</p>
+</div>
+			<div class="reply"><a rel="nofollow" class="comment-reply-link" href="https://srikantmahapatra.wordpress.com/2013/11/07/ruby-on-rails-interview-questions-and-answers/?replytocom=19#respond" onclick='return addComment.moveForm( "comment-19", "19", "respond", "129" )' aria-label="Reply to Ramu">Reply</a></div>		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1 clear highlander-comment" id="li-comment-22">
+		<article id="comment-22" class="comment">
+			<footer>
+				<div class="comment-author vcard">
+					<img id="grav-5da9d1f402e14141fb02defedfb17b9c-0" alt="" src="Ruby%20on%20Rails%20Interview%20Questions%20and%20Answers%20%7C%20Srikanta%20Mahapatro_files/5da9d1f402e14141fb02defedfb17b9c_002.jpeg" class="avatar avatar-40 grav-hashed grav-hijack" height="40" width="40">					<cite class="fn">neha612neha</cite> <span class="says">says:</span>				</div><!-- .comment-author .vcard -->
+				
+				<div class="comment-meta commentmetadata">
+					<a href="https://srikantmahapatra.wordpress.com/2013/11/07/ruby-on-rails-interview-questions-and-answers/#comment-22"><time datetime="2014-03-26T11:40:55+00:00">
+					March 26, 2014 at 11:40 am					</time></a>
+									</div><!-- .comment-meta .commentmetadata -->
+			</footer>
+
+			<div class="comment-content"><p>Very long and helpful list. Thank you so much for it!!</p>
+</div>
+			<div class="reply"><a rel="nofollow" class="comment-reply-link" href="https://srikantmahapatra.wordpress.com/2013/11/07/ruby-on-rails-interview-questions-and-answers/?replytocom=22#respond" onclick='return addComment.moveForm( "comment-22", "22", "respond", "129" )' aria-label="Reply to neha612neha">Reply</a></div>		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-pawankumaryadav odd alt thread-odd thread-alt depth-1 clear highlander-comment" id="li-comment-27">
+		<article id="comment-27" class="comment">
+			<footer>
+				<div class="comment-author vcard">
+					<img id="grav-2d247195281cab1609acb48db5efa910-0" alt="" src="Ruby%20on%20Rails%20Interview%20Questions%20and%20Answers%20%7C%20Srikanta%20Mahapatro_files/2d247195281cab1609acb48db5efa910.jpeg" class="avatar avatar-40 grav-hashed grav-hijack" height="40" width="40">					<cite class="fn"><a href="http://pawankumaryadav.wordpress.com/" rel="external nofollow" class="url">Pawan Yadav</a></cite> <span class="says">says:</span>				</div><!-- .comment-author .vcard -->
+				
+				<div class="comment-meta commentmetadata">
+					<a href="https://srikantmahapatra.wordpress.com/2013/11/07/ruby-on-rails-interview-questions-and-answers/#comment-27"><time datetime="2014-05-05T18:28:29+00:00">
+					May 5, 2014 at 6:28 pm					</time></a>
+									</div><!-- .comment-meta .commentmetadata -->
+			</footer>
+
+			<div class="comment-content"><p>Reblogged this on <a href="http://pawankumaryadav.wordpress.com/2014/05/05/ruby-on-rails-interview-questions-and-answers/" rel="nofollow"></a>.</p>
+</div>
+			<div class="reply"><a rel="nofollow" class="comment-reply-link" href="https://srikantmahapatra.wordpress.com/2013/11/07/ruby-on-rails-interview-questions-and-answers/?replytocom=27#respond" onclick='return addComment.moveForm( "comment-27", "27", "respond", "129" )' aria-label="Reply to Pawan Yadav">Reply</a></div>		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1 clear highlander-comment" id="li-comment-28">
+		<article id="comment-28" class="comment">
+			<footer>
+				<div class="comment-author vcard">
+					<img id="grav-390105a4ab80cde30259b6c6bd055be4-0" alt="" src="Ruby%20on%20Rails%20Interview%20Questions%20and%20Answers%20%7C%20Srikanta%20Mahapatro_files/390105a4ab80cde30259b6c6bd055be4.png" class="avatar avatar-40 grav-hashed grav-hijack" height="40" width="40">					<cite class="fn">Random Stranger</cite> <span class="says">says:</span>				</div><!-- .comment-author .vcard -->
+				
+				<div class="comment-meta commentmetadata">
+					<a href="https://srikantmahapatra.wordpress.com/2013/11/07/ruby-on-rails-interview-questions-and-answers/#comment-28"><time datetime="2014-05-14T19:55:50+00:00">
+					May 14, 2014 at 7:55 pm					</time></a>
+									</div><!-- .comment-meta .commentmetadata -->
+			</footer>
+
+			<div class="comment-content"><p>good but you might want to add some questions about testing</p>
+</div>
+			<div class="reply"><a rel="nofollow" class="comment-reply-link" href="https://srikantmahapatra.wordpress.com/2013/11/07/ruby-on-rails-interview-questions-and-answers/?replytocom=28#respond" onclick='return addComment.moveForm( "comment-28", "28", "respond", "129" )' aria-label="Reply to Random Stranger">Reply</a></div>		</article><!-- #comment-## -->
+
+	<ul class="children">
+	<li class="comment byuser comment-author-mailsrikanta comment-author-is-site-member bypostauthor odd alt depth-2 clear highlander-comment" id="li-comment-29">
+		<article id="comment-29" class="comment">
+			<footer>
+				<div class="comment-author vcard">
+					<img id="grav-b50354828f45c888cf7605769729b2a0-0" alt="" src="Ruby%20on%20Rails%20Interview%20Questions%20and%20Answers%20%7C%20Srikanta%20Mahapatro_files/b50354828f45c888cf7605769729b2a0_002.jpeg" class="avatar avatar-40 grav-hashed grav-hijack" height="40" width="40">					<cite class="fn"><a href="https://srikantmahapatra.wordpress.com/" rel="external nofollow" class="url">mailsrikanta</a></cite> <span class="says">says:</span>				</div><!-- .comment-author .vcard -->
+				
+				<div class="comment-meta commentmetadata">
+					<a href="https://srikantmahapatra.wordpress.com/2013/11/07/ruby-on-rails-interview-questions-and-answers/#comment-29"><time datetime="2014-05-15T04:40:26+00:00">
+					May 15, 2014 at 4:40 am					</time></a>
+									</div><!-- .comment-meta .commentmetadata -->
+			</footer>
+
+			<div class="comment-content"><p>Yes, I will add more questions on ruby, rails and testing also.</p>
+</div>
+			<div class="reply"><a rel="nofollow" class="comment-reply-link" href="https://srikantmahapatra.wordpress.com/2013/11/07/ruby-on-rails-interview-questions-and-answers/?replytocom=29#respond" onclick='return addComment.moveForm( "comment-29", "29", "respond", "129" )' aria-label="Reply to mailsrikanta">Reply</a></div>		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1 clear highlander-comment" id="li-comment-31">
+		<article id="comment-31" class="comment">
+			<footer>
+				<div class="comment-author vcard">
+					<img id="grav-80fa2c1abf3ef42073d6b6aa026b9f04-0" alt="" src="Ruby%20on%20Rails%20Interview%20Questions%20and%20Answers%20%7C%20Srikanta%20Mahapatro_files/80fa2c1abf3ef42073d6b6aa026b9f04.png" class="avatar avatar-40 grav-hashed grav-hijack" height="40" width="40">					<cite class="fn"><a href="http://ubethelivy.soup.io/" rel="external nofollow" class="url">Lacey</a></cite> <span class="says">says:</span>				</div><!-- .comment-author .vcard -->
+				
+				<div class="comment-meta commentmetadata">
+					<a href="https://srikantmahapatra.wordpress.com/2013/11/07/ruby-on-rails-interview-questions-and-answers/#comment-31"><time datetime="2014-05-20T23:23:57+00:00">
+					May 20, 2014 at 11:23 pm					</time></a>
+									</div><!-- .comment-meta .commentmetadata -->
+			</footer>
+
+			<div class="comment-content"><p>We are a group of volunteers and starting a new scheme<br>
+in our community. Your web site offered us with helpful info<br>
+to work on. You have performed an impressive activity and our entire neighborhood will probably be thankful to<br>
+you.</p>
+</div>
+			<div class="reply"><a rel="nofollow" class="comment-reply-link" href="https://srikantmahapatra.wordpress.com/2013/11/07/ruby-on-rails-interview-questions-and-answers/?replytocom=31#respond" onclick='return addComment.moveForm( "comment-31", "31", "respond", "129" )' aria-label="Reply to Lacey">Reply</a></div>		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-even depth-1 clear highlander-comment" id="li-comment-33">
+		<article id="comment-33" class="comment">
+			<footer>
+				<div class="comment-author vcard">
+					<img id="grav-36cf2ad429a7ad6ebb7ce62002aea74c-0" alt="" src="Ruby%20on%20Rails%20Interview%20Questions%20and%20Answers%20%7C%20Srikanta%20Mahapatro_files/36cf2ad429a7ad6ebb7ce62002aea74c.jpeg" class="avatar avatar-40 grav-hashed grav-hijack" height="40" width="40">					<cite class="fn">pinasis</cite> <span class="says">says:</span>				</div><!-- .comment-author .vcard -->
+				
+				<div class="comment-meta commentmetadata">
+					<a href="https://srikantmahapatra.wordpress.com/2013/11/07/ruby-on-rails-interview-questions-and-answers/#comment-33"><time datetime="2014-06-10T05:27:49+00:00">
+					June 10, 2014 at 5:27 am					</time></a>
+									</div><!-- .comment-meta .commentmetadata -->
+			</footer>
+
+			<div class="comment-content"><p>Hello,<br>
+I found the questions to be very helpful. But the first answer says 
+“view interacts with the model” as far as  I know view cannot interact 
+with anyone directly. So view displays things and hence controller 
+handels all the interactions with the models.  I am confused please 
+explain</p>
+</div>
+			<div class="reply"><a rel="nofollow" class="comment-reply-link" href="https://srikantmahapatra.wordpress.com/2013/11/07/ruby-on-rails-interview-questions-and-answers/?replytocom=33#respond" onclick='return addComment.moveForm( "comment-33", "33", "respond", "129" )' aria-label="Reply to pinasis">Reply</a></div>		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1 clear highlander-comment" id="li-comment-39">
+		<article id="comment-39" class="comment">
+			<footer>
+				<div class="comment-author vcard">
+					<img id="grav-9224f9a294c7707f563e107de3395112-0" alt="" src="Ruby%20on%20Rails%20Interview%20Questions%20and%20Answers%20%7C%20Srikanta%20Mahapatro_files/9224f9a294c7707f563e107de3395112.png" class="avatar avatar-40 grav-hashed grav-hijack" height="40" width="40">					<cite class="fn"><a href="http://gravatar.com/carlqt" rel="external nofollow" class="url">carlqt</a></cite> <span class="says">says:</span>				</div><!-- .comment-author .vcard -->
+				
+				<div class="comment-meta commentmetadata">
+					<a href="https://srikantmahapatra.wordpress.com/2013/11/07/ruby-on-rails-interview-questions-and-answers/#comment-39"><time datetime="2014-07-07T02:40:57+00:00">
+					July 7, 2014 at 2:40 am					</time></a>
+									</div><!-- .comment-meta .commentmetadata -->
+			</footer>
+
+			<div class="comment-content"><p>Awesome article, but you might want 
+to edit the part that says “your view interacts with mode” under the MVC
+ part. The view doesn’t know anything about the model, it’s the 
+controller that interacts with the model then the controller will send 
+back to information to the views.</p>
+</div>
+			<div class="reply"><a rel="nofollow" class="comment-reply-link" href="https://srikantmahapatra.wordpress.com/2013/11/07/ruby-on-rails-interview-questions-and-answers/?replytocom=39#respond" onclick='return addComment.moveForm( "comment-39", "39", "respond", "129" )' aria-label="Reply to carlqt">Reply</a></div>		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-even depth-1 clear highlander-comment" id="li-comment-40">
+		<article id="comment-40" class="comment">
+			<footer>
+				<div class="comment-author vcard">
+					<img id="grav-b654e97c655959c776e05164d986fb29-0" alt="" src="Ruby%20on%20Rails%20Interview%20Questions%20and%20Answers%20%7C%20Srikanta%20Mahapatro_files/b654e97c655959c776e05164d986fb29_002.png" class="avatar avatar-40 grav-hashed grav-hijack" height="40" width="40">					<cite class="fn">tarun</cite> <span class="says">says:</span>				</div><!-- .comment-author .vcard -->
+				
+				<div class="comment-meta commentmetadata">
+					<a href="https://srikantmahapatra.wordpress.com/2013/11/07/ruby-on-rails-interview-questions-and-answers/#comment-40"><time datetime="2014-07-14T08:01:50+00:00">
+					July 14, 2014 at 8:01 am					</time></a>
+									</div><!-- .comment-meta .commentmetadata -->
+			</footer>
+
+			<div class="comment-content"><p>really was helpfull…thanks Man <span class="wp-smiley wp-emoji wp-emoji-smile" title=":)">:)</span></p>
+</div>
+			<div class="reply"><a rel="nofollow" class="comment-reply-link" href="https://srikantmahapatra.wordpress.com/2013/11/07/ruby-on-rails-interview-questions-and-answers/?replytocom=40#respond" onclick='return addComment.moveForm( "comment-40", "40", "respond", "129" )' aria-label="Reply to tarun">Reply</a></div>		</article><!-- #comment-## -->
+
+	<ul class="children">
+	<li class="comment byuser comment-author-mailsrikanta comment-author-is-site-member bypostauthor even depth-2 clear highlander-comment" id="li-comment-42">
+		<article id="comment-42" class="comment">
+			<footer>
+				<div class="comment-author vcard">
+					<img id="grav-b50354828f45c888cf7605769729b2a0-1" alt="" src="Ruby%20on%20Rails%20Interview%20Questions%20and%20Answers%20%7C%20Srikanta%20Mahapatro_files/b50354828f45c888cf7605769729b2a0_002.jpeg" class="avatar avatar-40 grav-hashed grav-hijack" height="40" width="40">					<cite class="fn"><a href="https://srikantmahapatra.wordpress.com/" rel="external nofollow" class="url">mailsrikanta</a></cite> <span class="says">says:</span>				</div><!-- .comment-author .vcard -->
+				
+				<div class="comment-meta commentmetadata">
+					<a href="https://srikantmahapatra.wordpress.com/2013/11/07/ruby-on-rails-interview-questions-and-answers/#comment-42"><time datetime="2014-07-29T09:01:26+00:00">
+					July 29, 2014 at 9:01 am					</time></a>
+									</div><!-- .comment-meta .commentmetadata -->
+			</footer>
+
+			<div class="comment-content"><p>Welcome Tarun…</p>
+</div>
+			<div class="reply"><a rel="nofollow" class="comment-reply-link" href="https://srikantmahapatra.wordpress.com/2013/11/07/ruby-on-rails-interview-questions-and-answers/?replytocom=42#respond" onclick='return addComment.moveForm( "comment-42", "42", "respond", "129" )' aria-label="Reply to mailsrikanta">Reply</a></div>		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1 clear highlander-comment" id="li-comment-53">
+		<article id="comment-53" class="comment">
+			<footer>
+				<div class="comment-author vcard">
+					<img id="grav-452d7df867fc2cd0fef92ad3b8d8c216-0" alt="" src="Ruby%20on%20Rails%20Interview%20Questions%20and%20Answers%20%7C%20Srikanta%20Mahapatro_files/452d7df867fc2cd0fef92ad3b8d8c216_002.png" class="avatar avatar-40 grav-hashed grav-hijack" height="40" width="40">					<cite class="fn"><a href="http://ibsoftservices.com/" rel="external nofollow" class="url">Gajanan</a></cite> <span class="says">says:</span>				</div><!-- .comment-author .vcard -->
+				
+				<div class="comment-meta commentmetadata">
+					<a href="https://srikantmahapatra.wordpress.com/2013/11/07/ruby-on-rails-interview-questions-and-answers/#comment-53"><time datetime="2014-09-09T18:28:41+00:00">
+					September 9, 2014 at 6:28 pm					</time></a>
+									</div><!-- .comment-meta .commentmetadata -->
+			</footer>
+
+			<div class="comment-content"><p>Hi SRIKANTA<br>
+ Nice. Thank u very nice explain in very short</p>
+</div>
+			<div class="reply"><a rel="nofollow" class="comment-reply-link" href="https://srikantmahapatra.wordpress.com/2013/11/07/ruby-on-rails-interview-questions-and-answers/?replytocom=53#respond" onclick='return addComment.moveForm( "comment-53", "53", "respond", "129" )' aria-label="Reply to Gajanan">Reply</a></div>		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+		</ol><!-- .comment-list -->
+
+		
+	
+	
+					<div id="respond" class="comment-respond js">
+			<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="https://srikantmahapatra.wordpress.com/2013/11/07/ruby-on-rails-interview-questions-and-answers/#respond" style="display:none;">Cancel reply</a></small></h3>				<form action="https://srikantmahapatra.wordpress.com/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+					<input id="highlander_comment_nonce" name="highlander_comment_nonce" value="0b6572c190" type="hidden"><input name="_wp_http_referer" value="/2013/11/07/ruby-on-rails-interview-questions-and-answers/" type="hidden">
+<input name="hc_post_as" id="hc_post_as" value="guest" type="hidden">
+
+<div class="comment-form-field comment-textarea">
+	
+	<div id="comment-form-comment"><textarea class="autosizejs " tabindex="-1" style="position: absolute; top: -999px; left: 0px; right: auto; bottom: auto; border: 0px none; padding: 0px; box-sizing: content-box; word-wrap: break-word; height: 0px ! important; min-height: 0px ! important; overflow: hidden; transition: none 0s ease 0s ; font-family: &quot;Bitter&quot;,sans-serif; font-size: 14px; font-weight: 400; font-style: normal; letter-spacing: 0px; text-transform: none; text-decoration: none; word-spacing: 0px; text-indent: 0px; line-height: 24.5px; width: 858px;">Enter your comment here...</textarea><textarea style="height: 45px; overflow: hidden; word-wrap: break-word; resize: none;" placeholder="Enter your comment here..." id="comment" name="comment" title="Enter your comment here..."></textarea></div>
+</div>
+
+<div style="display: none;" id="comment-form-identity">
+
+	<div id="comment-form-nascar">
+		<p>Fill in your details below or click an icon to log in:</p>
+		<ul>
+			<li class="selected" style="display:none;">
+				<a href="#comment-form-guest" id="postas-guest" title="Guest">
+					<span></span>
+				</a>
+			</li>
+			<li>
+				<a href="#comment-form-load-service:WordPress.com" id="postas-wordpress" title="WordPress.com">
+					<span></span>
+				</a>
+			</li>
+			<li>
+				<a href="#comment-form-load-service:Twitter" id="postas-twitter" title="Twitter">
+					<span></span>
+				</a>
+			</li>
+			<li>
+				<a href="#comment-form-load-service:Facebook" id="postas-facebook" title="Facebook">
+					<span></span>
+				</a>
+			</li>
+			<li>
+			<iframe id="googleplus-sign-in" name="googleplus-sign-in" src="Ruby%20on%20Rails%20Interview%20Questions%20and%20Answers%20%7C%20Srikanta%20Mahapatro_files/a.html" scrolling="no" allowtransparency="true" seamless="seamless" frameborder="0" height="24" width="24"></iframe>
+			</li>
+		</ul>
+	</div>
+
+	<div id="comment-form-guest" class="comment-form-service selected">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+<a href="https://gravatar.com/site/signup/" target="_blank">				<img src="Ruby%20on%20Rails%20Interview%20Questions%20and%20Answers%20%7C%20Srikanta%20Mahapatro_files/ad516503a11cd5ca435acc9bb6523536.png" alt="Gravatar" class="no-grav" width="25">
+</a>			</div>
+
+				<div class="comment-form-fields">
+				<div class="comment-form-field comment-form-email">
+					<label for="email">Email <span class="required">(required)</span> <span class="nopublish">(Address never made public)</span></label>
+					<div class="comment-form-input"><input id="email" name="email" type="email"></div>
+				</div>
+				<div class="comment-form-field comment-form-author">
+					<label for="author">Name <span class="required">(required)</span></label>
+					<div class="comment-form-input"><input id="author" name="author" type="text"></div>
+				</div>
+				<div class="comment-form-field comment-form-url">
+					<label for="url">Website</label>
+					<div class="comment-form-input"><input id="url" name="url" type="text"></div>
+				</div>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-wordpress" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="Ruby%20on%20Rails%20Interview%20Questions%20and%20Answers%20%7C%20Srikanta%20Mahapatro_files/wplogo.png" alt="WordPress.com Logo" class="no-grav" width="25">
+			</div>
+
+				<div class="comment-form-fields">
+				<input name="wp_avatar" id="wordpress-avatar" class="comment-meta-wordpress" value="" type="hidden">
+				<input name="wp_user_id" id="wordpress-user_id" class="comment-meta-wordpress" value="" type="hidden">
+				<input name="wp_access_token" id="wordpress-access_token" class="comment-meta-wordpress" value="" type="hidden">
+				<p class="comment-form-posting-as pa-wordpress"><strong></strong> You are commenting using your <span class="skimlinks-unlinked">WordPress.com</span> account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout(%20'wordpress'%20);">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-twitter" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="Ruby%20on%20Rails%20Interview%20Questions%20and%20Answers%20%7C%20Srikanta%20Mahapatro_files/ad516503a11cd5ca435acc9bb6523536.png" alt="Twitter picture" class="no-grav" width="25">
+			</div>
+
+				<div class="comment-form-fields">
+				<input name="twitter_avatar" id="twitter-avatar" class="comment-meta-twitter" value="" type="hidden">
+				<input name="twitter_user_id" id="twitter-user_id" class="comment-meta-twitter" value="" type="hidden">
+				<input name="twitter_access_token" id="twitter-access_token" class="comment-meta-twitter" value="" type="hidden">
+				<p class="comment-form-posting-as pa-twitter"><strong></strong> You are commenting using your Twitter account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout(%20'twitter'%20);">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-facebook" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="Ruby%20on%20Rails%20Interview%20Questions%20and%20Answers%20%7C%20Srikanta%20Mahapatro_files/ad516503a11cd5ca435acc9bb6523536.png" alt="Facebook photo" class="no-grav" width="25">
+			</div>
+
+				<div class="comment-form-fields">
+				<input name="fb_avatar" id="facebook-avatar" class="comment-meta-facebook" value="" type="hidden">
+				<input name="fb_user_id" id="facebook-user_id" class="comment-meta-facebook" value="" type="hidden">
+				<input name="fb_access_token" id="facebook-access_token" class="comment-meta-facebook" value="" type="hidden">
+				<p class="comment-form-posting-as pa-facebook"><strong></strong> You are commenting using your Facebook account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout(%20'facebook'%20);">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-googleplus" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="Ruby%20on%20Rails%20Interview%20Questions%20and%20Answers%20%7C%20Srikanta%20Mahapatro_files/ad516503a11cd5ca435acc9bb6523536.png" alt="Google+ photo" class="no-grav" width="25">
+			</div>
+
+				<div class="comment-form-fields">
+				<input name="googleplus_avatar" id="googleplus-avatar" class="comment-meta-googleplus" value="" type="hidden">
+				<input name="googleplus_user_id" id="googleplus-user_id" class="comment-meta-googleplus" value="" type="hidden">
+				<input name="googleplus_access_token" id="googleplus-access_token" class="comment-meta-googleplus" value="" type="hidden">
+				<p class="comment-form-posting-as pa-googleplus"><strong></strong> You are commenting using your Google+ account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout(%20'googleplus'%20);">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+
+	<div id="comment-form-load-service" class="comment-form-service">
+		<div class="comment-form-posting-as-cancel"><a href="javascript:HighlanderComments.cancelExternalWindow();">Cancel</a></div>
+		<p>Connecting to %s</p>
+	</div>
+
+</div>
+
+<script type="text/javascript">
+var highlander_expando_javascript = function(){
+	var input = document.createElement( 'input' ),
+	    comment = jQuery( '#comment' );
+
+	if ( 'placeholder' in input ) {
+		comment.attr( 'placeholder', jQuery( '.comment-textarea label' ).remove().text() );
+	}
+
+	// Expando Mode: start small, then auto-resize on first click + text length
+	jQuery( '#comment-form-identity' ).hide();
+	jQuery( '#comment-form-subscribe' ).hide();
+	jQuery( '#commentform .form-submit' ).hide();
+
+	comment.css( { 'height':'10px' } ).one( 'focus', function() {
+		var timer = setInterval( HighlanderComments.resizeCallback, 10 )
+		jQuery( this ).animate( { 'height': HighlanderComments.initialHeight } ).delay( 100 ).queue( function(n) { clearInterval( timer ); HighlanderComments.resizeCallback(); n(); } );
+		jQuery( '#comment-form-identity' ).slideDown();
+		jQuery( '#comment-form-subscribe' ).slideDown();
+		jQuery( '#commentform .form-submit' ).slideDown();
+	});
+}
+jQuery(document).ready( highlander_expando_javascript );
+</script>
+
+<div style="display: none;" id="comment-form-subscribe">
+	<p class="comment-subscription-form"><input name="subscribe" id="subscribe" value="subscribe" style="width: auto;" tabindex="6" type="checkbox"> <label class="subscribe-label" id="subscribe-label" for="subscribe" style="display: inline;">Notify me of new comments via email.</label></p></div>
+
+
+
+
+<p style="display: none;" class="form-submit"><input name="submit" id="comment-submit" class="submit" value="Post Comment" type="submit"> <input name="comment_post_ID" value="129" id="comment_post_ID" type="hidden">
+<input name="comment_parent" id="comment_parent" value="0" type="hidden">
+</p><p style="display: none;"><input id="akismet_comment_nonce" name="akismet_comment_nonce" value="5c5be13639" type="hidden"></p>
+<input name="genseq" value="1450439213" type="hidden">
+<p style="display: none;"></p>				<input id="ak_js" name="ak_js" value="1450439214774" type="hidden"></form>
+					</div><!-- #respond -->
+		<div style="clear: both"></div>
+</div><!-- #comments -->
+
+		
+		</div><!-- #content -->
+	</div><!-- #primary -->
+
+	<div id="secondary" class="widget-area" role="complementary">
+						<aside id="recent-posts-2" class="widget widget_recent_entries">		<h1 class="widget-title">Recent Posts</h1>		<ul>
+					<li>
+				<a href="https://srikantmahapatra.wordpress.com/2013/11/08/destructive-method-in-ruby/">Destructive method in&nbsp;ruby</a>
+						</li>
+					<li>
+				<a href="https://srikantmahapatra.wordpress.com/2013/11/08/error-actionviewtemplateerrror-application-css-isnt-precompiled/">Error:- ActionView::Template::Errror (application.css isn’t&nbsp;precompiled)</a>
+						</li>
+					<li>
+				<a href="https://srikantmahapatra.wordpress.com/2013/11/08/explore-more-about-nil-empty-blank-present-in-ruby-on-rails/">Explore more about .nil? .empty? .blank? .present? in Ruby on&nbsp;Rails</a>
+						</li>
+					<li>
+				<a href="https://srikantmahapatra.wordpress.com/2013/11/07/ruby-on-rails-interview-questions-and-answers/">Ruby on Rails Interview Questions and&nbsp;Answers</a>
+						</li>
+					<li>
+				<a href="https://srikantmahapatra.wordpress.com/2013/10/28/make-your-rails-code-better-using-metric_fu/">Make your Rails Code Better using “Metric_fu”</a>
+						</li>
+				</ul>
+		</aside>		<aside id="recent-comments-2" class="widget widget_recent_comments"><h1 class="widget-title">Recent Comments</h1>				<table class="recentcommentsavatar" border="0" cellpadding="0" cellspacing="0">
+					<tbody><tr><td title="kumar352" class="recentcommentsavatartop" style="height:48px; width:48px;"><a href="http://bitbucket.org/" rel="nofollow"><img id="grav-e1a12147f7162e50d2d9b9ac0c99a9f3-0" alt="" src="Ruby%20on%20Rails%20Interview%20Questions%20and%20Answers%20%7C%20Srikanta%20Mahapatro_files/e1a12147f7162e50d2d9b9ac0c99a9f3.jpeg" class="avatar avatar-48 grav-hashed" height="48" width="48"></a></td><td class="recentcommentstexttop" style=""><a href="http://bitbucket.org/" rel="nofollow">kumar352</a> on <a href="https://srikantmahapatra.wordpress.com/2013/11/08/explore-more-about-nil-empty-blank-present-in-ruby-on-rails/comment-page-1/#comment-64">Explore more about .nil? .empt…</a></td></tr><tr><td title="Gajanan" class="recentcommentsavatarend" style="height:48px; width:48px;"><a href="http://ibsoftservices.com/" rel="nofollow"><img id="grav-452d7df867fc2cd0fef92ad3b8d8c216-1" alt="" src="Ruby%20on%20Rails%20Interview%20Questions%20and%20Answers%20%7C%20Srikanta%20Mahapatro_files/452d7df867fc2cd0fef92ad3b8d8c216.png" class="avatar avatar-48 grav-hashed" height="48" width="48"></a></td><td class="recentcommentstextend" style=""><a href="http://ibsoftservices.com/" rel="nofollow">Gajanan</a> on <a href="https://srikantmahapatra.wordpress.com/2013/11/07/ruby-on-rails-interview-questions-and-answers/comment-page-1/#comment-53">Ruby on Rails Interview Questi…</a></td></tr><tr><td title="mailsrikanta" class="recentcommentsavatarend" style="height:48px; width:48px;"><a href="https://srikantmahapatra.wordpress.com/" rel="nofollow"><img id="grav-b50354828f45c888cf7605769729b2a0-2" alt="" src="Ruby%20on%20Rails%20Interview%20Questions%20and%20Answers%20%7C%20Srikanta%20Mahapatro_files/b50354828f45c888cf7605769729b2a0.jpeg" class="avatar avatar-48 grav-hashed" height="48" width="48"></a></td><td class="recentcommentstextend" style=""><a href="https://srikantmahapatra.wordpress.com/" rel="nofollow">mailsrikanta</a> on <a href="https://srikantmahapatra.wordpress.com/2013/11/07/ruby-on-rails-interview-questions-and-answers/comment-page-1/#comment-42">Ruby on Rails Interview Questi…</a></td></tr><tr><td title="tarun" class="recentcommentsavatarend" style="height:48px; width:48px;"><img id="grav-b654e97c655959c776e05164d986fb29-1" alt="" src="Ruby%20on%20Rails%20Interview%20Questions%20and%20Answers%20%7C%20Srikanta%20Mahapatro_files/b654e97c655959c776e05164d986fb29.png" class="avatar avatar-48 grav-hashed grav-hijack" height="48" width="48"></td><td class="recentcommentstextend" style="">tarun on <a href="https://srikantmahapatra.wordpress.com/2013/11/07/ruby-on-rails-interview-questions-and-answers/comment-page-1/#comment-40">Ruby on Rails Interview Questi…</a></td></tr><tr><td title="carlqt" class="recentcommentsavatarend" style="height:48px; width:48px;"><a href="http://gravatar.com/carlqt" rel="nofollow"><img id="grav-9224f9a294c7707f563e107de3395112-1" alt="" src="Ruby%20on%20Rails%20Interview%20Questions%20and%20Answers%20%7C%20Srikanta%20Mahapatro_files/9224f9a294c7707f563e107de3395112_002.png" class="avatar avatar-48 grav-hashed" height="48" width="48"></a></td><td class="recentcommentstextend" style=""><a href="http://gravatar.com/carlqt" rel="nofollow">carlqt</a> on <a href="https://srikantmahapatra.wordpress.com/2013/11/07/ruby-on-rails-interview-questions-and-answers/comment-page-1/#comment-39">Ruby on Rails Interview Questi…</a></td></tr>				</tbody></table>
+				</aside><aside id="categories-2" class="widget widget_categories"><h1 class="widget-title">Categories</h1>		<ul>
+	<li class="cat-item cat-item-34978622"><a href="https://srikantmahapatra.wordpress.com/category/jquery-2/">Jquery</a>
+</li>
+	<li class="cat-item cat-item-4419"><a href="https://srikantmahapatra.wordpress.com/category/mysql/">MySql</a>
+</li>
+	<li class="cat-item cat-item-7001662"><a href="https://srikantmahapatra.wordpress.com/category/ruby-2/">Ruby</a>
+</li>
+	<li class="cat-item cat-item-3601"><a href="https://srikantmahapatra.wordpress.com/category/ruby-on-rails/">Ruby on Rails</a>
+</li>
+		</ul>
+</aside><aside id="archives-2" class="widget widget_archive"><h1 class="widget-title">Archives</h1>		<ul>
+			<li><a href="https://srikantmahapatra.wordpress.com/2013/11/">November 2013</a></li>
+	<li><a href="https://srikantmahapatra.wordpress.com/2013/10/">October 2013</a></li>
+	<li><a href="https://srikantmahapatra.wordpress.com/2013/08/">August 2013</a></li>
+	<li><a href="https://srikantmahapatra.wordpress.com/2013/07/">July 2013</a></li>
+	<li><a href="https://srikantmahapatra.wordpress.com/2013/06/">June 2013</a></li>
+	<li><a href="https://srikantmahapatra.wordpress.com/2013/04/">April 2013</a></li>
+	<li><a href="https://srikantmahapatra.wordpress.com/2013/03/">March 2013</a></li>
+		</ul>
+		</aside><aside id="wp_tag_cloud-2" class="widget wp_widget_tag_cloud"><h1 class="widget-title">Tags</h1><div style="overflow:hidden"><a href="https://srikantmahapatra.wordpress.com/tag/blank/" class="tag-link-15966" title="1 topic" style="font-size: 8pt;">.blank?</a>
+<a href="https://srikantmahapatra.wordpress.com/tag/empty-blank/" class="tag-link-72825811" title="1 topic" style="font-size: 8pt;">.empty? .blank?</a>
+<a href="https://srikantmahapatra.wordpress.com/tag/nil-empty/" class="tag-link-200162692" title="1 topic" style="font-size: 8pt;">.nil? .empty?</a>
+<a href="https://srikantmahapatra.wordpress.com/tag/nil-empty-blank-present/" class="tag-link-200162691" title="1 topic" style="font-size: 8pt;">.nil? .empty? .blank? .present?</a>
+<a href="https://srikantmahapatra.wordpress.com/tag/actionview-template-error/" class="tag-link-200186354" title="1 topic" style="font-size: 8pt;">actionview template error</a>
+<a href="https://srikantmahapatra.wordpress.com/tag/activerecord/" class="tag-link-143514" title="1 topic" style="font-size: 8pt;">ActiveRecord</a>
+<a href="https://srikantmahapatra.wordpress.com/tag/activerecord-callbacks/" class="tag-link-196643524" title="1 topic" style="font-size: 8pt;">ActiveRecord callbacks</a>
+<a href="https://srikantmahapatra.wordpress.com/tag/application-css-isnt-precompiled/" class="tag-link-116980088" title="1 topic" style="font-size: 8pt;">application.css isn’t precompiled</a>
+<a href="https://srikantmahapatra.wordpress.com/tag/atom/" class="tag-link-1517" title="1 topic" style="font-size: 8pt;">ATOM</a>
+<a href="https://srikantmahapatra.wordpress.com/tag/atom-feed-validator/" class="tag-link-196644810" title="1 topic" style="font-size: 8pt;">ATOM feed validator</a>
+<a href="https://srikantmahapatra.wordpress.com/tag/aws-s3/" class="tag-link-2513561" title="1 topic" style="font-size: 8pt;">AWS S3</a>
+<a href="https://srikantmahapatra.wordpress.com/tag/bang-method/" class="tag-link-200186662" title="1 topic" style="font-size: 8pt;">bang method</a>
+<a href="https://srikantmahapatra.wordpress.com/tag/bitly/" class="tag-link-8564876" title="1 topic" style="font-size: 8pt;">Bitly</a>
+<a href="https://srikantmahapatra.wordpress.com/tag/bootstrap/" class="tag-link-114042" title="1 topic" style="font-size: 8pt;">bootstrap</a>
+<a href="https://srikantmahapatra.wordpress.com/tag/bootstrap-in-rails3/" class="tag-link-198753116" title="1 topic" style="font-size: 8pt;">bootstrap in rails3</a>
+<a href="https://srikantmahapatra.wordpress.com/tag/callbacks/" class="tag-link-157626" title="1 topic" style="font-size: 8pt;">callbacks</a>
+<a href="https://srikantmahapatra.wordpress.com/tag/callbacks-in-rails/" class="tag-link-196643523" title="1 topic" style="font-size: 8pt;">callbacks in rails</a>
+<a href="https://srikantmahapatra.wordpress.com/tag/code-optimise/" class="tag-link-198754578" title="1 topic" style="font-size: 8pt;">code optimise</a>
+<a href="https://srikantmahapatra.wordpress.com/tag/customize-fullcalendar/" class="tag-link-198183803" title="1 topic" style="font-size: 8pt;">customize FullCalendar</a>
+<a href="https://srikantmahapatra.wordpress.com/tag/destructive-method/" class="tag-link-71536117" title="1 topic" style="font-size: 8pt;">Destructive method</a>
+<a href="https://srikantmahapatra.wordpress.com/tag/event-calendar/" class="tag-link-37256" title="1 topic" style="font-size: 8pt;">event calendar</a>
+<a href="https://srikantmahapatra.wordpress.com/tag/excel-to-mysql/" class="tag-link-7989268" title="1 topic" style="font-size: 8pt;">excel to mysql</a>
+<a href="https://srikantmahapatra.wordpress.com/tag/facebook-integration-in-rails/" class="tag-link-178527622" title="1 topic" style="font-size: 8pt;">facebook integration in rails</a>
+<a href="https://srikantmahapatra.wordpress.com/tag/feed-validator/" class="tag-link-4281594" title="1 topic" style="font-size: 8pt;">Feed Validator</a>
+<a href="https://srikantmahapatra.wordpress.com/tag/feed-validator-for-atom-and-rss/" class="tag-link-196644811" title="1 topic" style="font-size: 8pt;">Feed Validator for Atom and RSS</a>
+<a href="https://srikantmahapatra.wordpress.com/tag/fundamental-of-ruby/" class="tag-link-200162714" title="1 topic" style="font-size: 8pt;">fundamental of ruby</a>
+<a href="https://srikantmahapatra.wordpress.com/tag/halfday-and-fullday/" class="tag-link-198183797" title="1 topic" style="font-size: 8pt;">halfday and fullday</a>
+<a href="https://srikantmahapatra.wordpress.com/tag/halfday-and-fullday-in-fullcalendar/" class="tag-link-198183800" title="1 topic" style="font-size: 8pt;">halfday and fullday in FullCalendar</a>
+<a href="https://srikantmahapatra.wordpress.com/tag/holiday-in-event-calendar/" class="tag-link-198183796" title="1 topic" style="font-size: 8pt;">holiday in event calendar</a>
+<a href="https://srikantmahapatra.wordpress.com/tag/implementation-of-bootstrap-in-rails3/" class="tag-link-198753166" title="1 topic" style="font-size: 8pt;">implementation of bootstrap in rails3</a>
+<a href="https://srikantmahapatra.wordpress.com/tag/important-interview-questions/" class="tag-link-51558369" title="1 topic" style="font-size: 8pt;">important interview questions</a>
+<a href="https://srikantmahapatra.wordpress.com/tag/import-data-from-excel/" class="tag-link-84813768" title="1 topic" style="font-size: 8pt;">import data from excel</a>
+<a href="https://srikantmahapatra.wordpress.com/tag/instant-message/" class="tag-link-1665" title="1 topic" style="font-size: 8pt;">Instant Message</a>
+<a href="https://srikantmahapatra.wordpress.com/tag/interview-questions/" class="tag-link-65468" title="1 topic" style="font-size: 8pt;">Interview questions</a>
+<a href="https://srikantmahapatra.wordpress.com/tag/jquery/" class="tag-link-203308" title="1 topic" style="font-size: 8pt;">jquery</a>
+<a href="https://srikantmahapatra.wordpress.com/tag/menu/" class="tag-link-3613" title="1 topic" style="font-size: 8pt;">menu</a>
+<a href="https://srikantmahapatra.wordpress.com/tag/metric_fu/" class="tag-link-12222807" title="1 topic" style="font-size: 8pt;">Metric_fu</a>
+<a href="https://srikantmahapatra.wordpress.com/tag/nil-objects-in-rails/" class="tag-link-200162713" title="1 topic" style="font-size: 8pt;">nil objects in rails</a>
+<a href="https://srikantmahapatra.wordpress.com/tag/omniauth/" class="tag-link-47892006" title="1 topic" style="font-size: 8pt;">omniauth</a>
+<a href="https://srikantmahapatra.wordpress.com/tag/omniauth-facebook/" class="tag-link-80925839" title="1 topic" style="font-size: 8pt;">omniauth-facebook</a>
+<a href="https://srikantmahapatra.wordpress.com/tag/paperclip/" class="tag-link-284444" title="1 topic" style="font-size: 8pt;">paperclip</a>
+<a href="https://srikantmahapatra.wordpress.com/tag/precompile/" class="tag-link-8615830" title="1 topic" style="font-size: 8pt;">precompile</a>
+<a href="https://srikantmahapatra.wordpress.com/tag/pubnub/" class="tag-link-48906997" title="1 topic" style="font-size: 8pt;">PUBNUB</a>
+<a href="https://srikantmahapatra.wordpress.com/tag/push-notification/" class="tag-link-9519955" title="1 topic" style="font-size: 8pt;">push notification</a>
+<a href="https://srikantmahapatra.wordpress.com/tag/push-notification-in-rails3/" class="tag-link-180726825" title="1 topic" style="font-size: 8pt;">push notification in rails3</a>
+<a href="https://srikantmahapatra.wordpress.com/tag/rails/" class="tag-link-6652" title="12 topics" style="font-size: 22pt;">rails</a>
+<a href="https://srikantmahapatra.wordpress.com/tag/rails3/" class="tag-link-15000792" title="7 topics" style="font-size: 18.37037037037pt;">rails3</a>
+<a href="https://srikantmahapatra.wordpress.com/tag/rails-error/" class="tag-link-85470974" title="1 topic" style="font-size: 8pt;">rails error</a>
+<a href="https://srikantmahapatra.wordpress.com/tag/rails-interview-questions/" class="tag-link-109354919" title="1 topic" style="font-size: 8pt;">Rails interview questions</a>
+<a href="https://srikantmahapatra.wordpress.com/tag/rails-not-found/" class="tag-link-198354989" title="1 topic" style="font-size: 8pt;">rails not found</a>
+<a href="https://srikantmahapatra.wordpress.com/tag/random-number/" class="tag-link-737350" title="1 topic" style="font-size: 8pt;">random number</a>
+<a href="https://srikantmahapatra.wordpress.com/tag/refinerycms/" class="tag-link-42519510" title="1 topic" style="font-size: 8pt;">RefineryCMS</a>
+<a href="https://srikantmahapatra.wordpress.com/tag/refinerycms-menu/" class="tag-link-191969266" title="1 topic" style="font-size: 8pt;">RefineryCMS menu</a>
+<a href="https://srikantmahapatra.wordpress.com/tag/refinerycms-submenu/" class="tag-link-191969265" title="1 topic" style="font-size: 8pt;">Refinerycms submenu</a>
+<a href="https://srikantmahapatra.wordpress.com/tag/roo/" class="tag-link-360424" title="1 topic" style="font-size: 8pt;">roo</a>
+<a href="https://srikantmahapatra.wordpress.com/tag/roo-gem/" class="tag-link-185215335" title="1 topic" style="font-size: 8pt;">roo gem</a>
+<a href="https://srikantmahapatra.wordpress.com/tag/ror/" class="tag-link-31091" title="4 topics" style="font-size: 14.913580246914pt;">ROR</a>
+<a href="https://srikantmahapatra.wordpress.com/tag/ror-important-questions/" class="tag-link-200049520" title="1 topic" style="font-size: 8pt;">ror important questions</a>
+<a href="https://srikantmahapatra.wordpress.com/tag/ror-interview-questions/" class="tag-link-11841090" title="1 topic" style="font-size: 8pt;">ROR interview questions</a>
+<a href="https://srikantmahapatra.wordpress.com/tag/rss/" class="tag-link-1518" title="2 topics" style="font-size: 11.111111111111pt;">RSS</a>
+<a href="https://srikantmahapatra.wordpress.com/tag/rss-feeds/" class="tag-link-16565" title="2 topics" style="font-size: 11.111111111111pt;">RSS feeds</a>
+<a href="https://srikantmahapatra.wordpress.com/tag/rss-feeds-from-blog/" class="tag-link-196642432" title="1 topic" style="font-size: 8pt;">RSS feeds from blog</a>
+<a href="https://srikantmahapatra.wordpress.com/tag/rss-validator/" class="tag-link-1964822" title="1 topic" style="font-size: 8pt;">RSS Validator</a>
+<a href="https://srikantmahapatra.wordpress.com/tag/ruby/" class="tag-link-4872" title="10 topics" style="font-size: 20.79012345679pt;">ruby</a>
+<a href="https://srikantmahapatra.wordpress.com/tag/ruby-push-api/" class="tag-link-159873579" title="1 topic" style="font-size: 8pt;">Ruby-Push-Api</a>
+<a href="https://srikantmahapatra.wordpress.com/tag/rubygem/" class="tag-link-1213496" title="1 topic" style="font-size: 8pt;">rubygem</a>
+<a href="https://srikantmahapatra.wordpress.com/tag/ruby-interview-questions/" class="tag-link-109354821" title="1 topic" style="font-size: 8pt;">ruby interview questions</a>
+<a href="https://srikantmahapatra.wordpress.com/tag/ruby-on-rails/" class="tag-link-3601" title="4 topics" style="font-size: 14.913580246914pt;">Ruby on Rails</a>
+<a href="https://srikantmahapatra.wordpress.com/tag/ruby-on-rails-interview-questions/" class="tag-link-11841089" title="1 topic" style="font-size: 8pt;">Ruby on rails interview questions</a>
+<a href="https://srikantmahapatra.wordpress.com/tag/s3-bucket/" class="tag-link-8466727" title="1 topic" style="font-size: 8pt;">s3 bucket</a>
+<a href="https://srikantmahapatra.wordpress.com/tag/securerandom/" class="tag-link-75055319" title="1 topic" style="font-size: 8pt;">securerandom</a>
+<a href="https://srikantmahapatra.wordpress.com/tag/shorten-url/" class="tag-link-1863040" title="1 topic" style="font-size: 8pt;">shorten URL</a>
+<a href="https://srikantmahapatra.wordpress.com/tag/submenu/" class="tag-link-1248578" title="1 topic" style="font-size: 8pt;">submenu</a>
+<a href="https://srikantmahapatra.wordpress.com/tag/zrssfeed/" class="tag-link-42379257" title="1 topic" style="font-size: 8pt;">zRSSFeed</a></div></aside><aside id="top-clicks-2" class="widget widget_top-clicks"><h1 class="widget-title">Blog Status</h1><ul><li><a href="http://lesseverything.com/blog/archives/2012/08/02/the-difference-between-include-and-extend-in-ruby/" target="_blank" rel="nofollow">lesseverything.com/blog/a…</a></li><li><a href="https://srikantmahapatra.files.wordpress.com/2014/06/restfulrails.pdf" target="_blank" rel="nofollow">srikantmahapatra.files.wo…</a></li><li><a href="http://dev.mensfeld.pl/2011/07/using-rails-sweepers-outside-controllers/" target="_blank" rel="nofollow">dev.mensfeld.pl/2011/07/u…</a></li><li><a href="https://srikantmahapatra.files.wordpress.com/2013/10/holiday_full-andhalfday.png" target="_blank" rel="nofollow">srikantmahapatra.files.wo…</a></li><li><a href="http://ionrails.com/2009/09/19/ruby_require-vs-load-vs-include-vs-extend/" target="_blank" rel="nofollow">ionrails.com/2009/09/19/r…</a></li><li><a href="http://apidock.com/rails/ActiveRecord/Observer" target="_blank" rel="nofollow">apidock.com/rails/ActiveR…</a></li><li><a href="https://srikantmahapatra.files.wordpress.com/2013/11/mvc1.png" target="_blank" rel="nofollow">srikantmahapatra.files.wo…</a></li></ul></aside><aside id="blog_subscription-2" class="widget widget_blog_subscription"><h1 class="widget-title"><label for="subscribe-field">Follow Blog via Email</label></h1>
+				<form action="https://subscribe.wordpress.com" method="post" accept-charset="utf-8" id="subscribe-blog">
+											<p>Enter your email address to follow this blog and receive notifications of new posts by email.</p>
+<p>Join 16 other followers</p>
+						<p><input name="email" style="width: 95%; padding: 1px 2px" placeholder="Enter your email address" id="subscribe-field" type="text"></p>
+					
+					<p>
+						<input name="action" value="subscribe" type="hidden">
+						<input name="blog_id" value="48740664" type="hidden">
+						<input name="source" value="https://srikantmahapatra.wordpress.com/2013/11/07/ruby-on-rails-interview-questions-and-answers/" type="hidden">
+						<input name="sub-type" value="widget" type="hidden">
+						<input name="redirect_fragment" value="blog_subscription-2" type="hidden">
+						<input id="_wpnonce" name="_wpnonce" value="05ed72ce00" type="hidden">						<input value="Follow" type="submit">
+					</p>
+				</form>
+			
+</aside><aside id="jetpack_my_community-2" class="widget widget_jetpack_my_community"><h1 class="widget-title">Community</h1><div class="widgets-multi-column-grid"><ul><li><a href="http://sumanranjanpanda.wordpress.com/"><img id="grav-8edeb60932f9f60703eeddac82d49bae-1" alt="" src="Ruby%20on%20Rails%20Interview%20Questions%20and%20Answers%20%7C%20Srikanta%20Mahapatro_files/8edeb60932f9f60703eeddac82d49bae_002.jpeg" class="avatar avatar-48 grav-hashed" height="48" width="48"></a></li><li><a href="http://rordeveloper.wordpress.com/"><img id="grav-5d5562af8f6e279e3e2fa0312dbb6dc7-0" alt="" src="Ruby%20on%20Rails%20Interview%20Questions%20and%20Answers%20%7C%20Srikanta%20Mahapatro_files/5d5562af8f6e279e3e2fa0312dbb6dc7.jpeg" class="avatar avatar-48 grav-hashed" height="48" width="48"></a></li><li><a href="http://amitrmohanty.wordpress.com/"><img id="grav-347a10a4cce91b19c730304c13bbb331-0" alt="" src="Ruby%20on%20Rails%20Interview%20Questions%20and%20Answers%20%7C%20Srikanta%20Mahapatro_files/347a10a4cce91b19c730304c13bbb331.jpeg" class="avatar avatar-48 grav-hashed" height="48" width="48"></a></li><li><a href="http://isr3alloveyul3ni.wordpress.com/2014/03/12/ror/"><img id="grav-false-0" alt="" src="Ruby%20on%20Rails%20Interview%20Questions%20and%20Answers%20%7C%20Srikanta%20Mahapatro_files/a.png" class="avatar avatar-48 grav-hashed" height="48" width="48"></a></li><li><a href="http://fjordsrubyadventure.wordpress.com/"><img id="grav-2904473cf590b535beaf7f08dd946cb4-0" alt="" src="Ruby%20on%20Rails%20Interview%20Questions%20and%20Answers%20%7C%20Srikanta%20Mahapatro_files/2904473cf590b535beaf7f08dd946cb4.jpeg" class="avatar avatar-48 grav-hashed" height="48" width="48"></a></li><li><a href=""><img id="grav-b654e97c655959c776e05164d986fb29-2" alt="" src="Ruby%20on%20Rails%20Interview%20Questions%20and%20Answers%20%7C%20Srikanta%20Mahapatro_files/b654e97c655959c776e05164d986fb29.png" class="avatar avatar-48 grav-hashed" height="48" width="48"></a></li><li><a href="http://www.sutocom.net/"><img id="grav-1396112f7db4689ffa5f2595d7b7fccf-1" alt="" src="Ruby%20on%20Rails%20Interview%20Questions%20and%20Answers%20%7C%20Srikanta%20Mahapatro_files/1396112f7db4689ffa5f2595d7b7fccf_002.jpeg" class="avatar avatar-48 grav-hashed" height="48" width="48"></a></li><li><a href="http://gravatar.com/carlqt"><img id="grav-9224f9a294c7707f563e107de3395112-2" alt="" src="Ruby%20on%20Rails%20Interview%20Questions%20and%20Answers%20%7C%20Srikanta%20Mahapatro_files/9224f9a294c7707f563e107de3395112_002.png" class="avatar avatar-48 grav-hashed" height="48" width="48"></a></li><li><a href="http://rajdeepbhatia.wordpress.com/"><img id="grav-d43797471ff764ee05836bb7a7963591-0" alt="" src="Ruby%20on%20Rails%20Interview%20Questions%20and%20Answers%20%7C%20Srikanta%20Mahapatro_files/d43797471ff764ee05836bb7a7963591.jpeg" class="avatar avatar-48 grav-hashed" height="48" width="48"></a></li><li><a href=""><img id="grav-5da9d1f402e14141fb02defedfb17b9c-1" alt="" src="Ruby%20on%20Rails%20Interview%20Questions%20and%20Answers%20%7C%20Srikanta%20Mahapatro_files/5da9d1f402e14141fb02defedfb17b9c.jpeg" class="avatar avatar-48 grav-hashed" height="48" width="48"></a></li></ul></div></aside>	</div><!-- #secondary -->
+	</div><!-- #main -->
+
+	<footer id="colophon" class="site-footer" role="contentinfo">
+		<div class="site-info">
+						<a href="https://wordpress.com/?ref=footer_website">Create a free website or blog at WordPress.com.</a>
+			<span class="sep"> | </span>
+			<a href="https://wordpress.com/themes/zoren/" title="Learn more about this theme">The Zoren Theme</a>.		</div><!-- .site-info -->
+	</footer><!-- #colophon -->
+</div><!-- #page -->
+
+<!-- wpcom_wp_footer -->
+<script type="text/javascript" src="Ruby%20on%20Rails%20Interview%20Questions%20and%20Answers%20%7C%20Srikanta%20Mahapatro_files/gprofiles.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="Ruby%20on%20Rails%20Interview%20Questions%20and%20Answers%20%7C%20Srikanta%20Mahapatro_files/wpgroho.js"></script>
+
+	<script>
+		//initialize and attach hovercards to all gravatars
+		jQuery( document ).ready( function( $ ) {
+
+			if (typeof Gravatar === "undefined"){
+				return;
+			}
+
+			if ( typeof Gravatar.init !== "function" ) {
+				return;
+			}			
+
+			Gravatar.profile_cb = function( hash, id ) {
+				WPGroHo.syncProfileData( hash, id );
+			};
+			Gravatar.my_hash = WPGroHo.my_hash;
+			Gravatar.init( 'body', '#wp-admin-bar-my-account' );
+		});
+	</script>
+
+		<div style="display:none">
+	<div class="grofile-hash-map-d516bcae02005ecd06ae68bfcb105da5">
+	</div>
+	<div class="grofile-hash-map-1396112f7db4689ffa5f2595d7b7fccf">
+	</div>
+	<div class="grofile-hash-map-8edeb60932f9f60703eeddac82d49bae">
+	</div>
+	<div class="grofile-hash-map-128b10f2db595a6d798b64ccb166fda1">
+	</div>
+	<div class="grofile-hash-map-0777f56fccdaf2a3b5a9831f52380d9e">
+	</div>
+	<div class="grofile-hash-map-f8c64f98c6eac3470ebfe0986a00b5e9">
+	</div>
+	<div class="grofile-hash-map-5da9d1f402e14141fb02defedfb17b9c">
+	</div>
+	<div class="grofile-hash-map-2d247195281cab1609acb48db5efa910">
+	</div>
+	<div class="grofile-hash-map-390105a4ab80cde30259b6c6bd055be4">
+	</div>
+	<div class="grofile-hash-map-b50354828f45c888cf7605769729b2a0">
+	</div>
+	<div class="grofile-hash-map-80fa2c1abf3ef42073d6b6aa026b9f04">
+	</div>
+	<div class="grofile-hash-map-36cf2ad429a7ad6ebb7ce62002aea74c">
+	</div>
+	<div class="grofile-hash-map-9224f9a294c7707f563e107de3395112">
+	</div>
+	<div class="grofile-hash-map-b654e97c655959c776e05164d986fb29">
+	</div>
+	<div class="grofile-hash-map-452d7df867fc2cd0fef92ad3b8d8c216">
+	</div>
+	<div class="grofile-hash-map-e1a12147f7162e50d2d9b9ac0c99a9f3">
+	</div>
+	</div>
+<script type="text/javascript">
+/* <![CDATA[ */
+var HighlanderComments = {"loggingInText":"Logging In\u2026","submittingText":"Posting Comment\u2026","postCommentText":"Post Comment","connectingToText":"Connecting to %s","commentingAsText":"%1$s: You are commenting using your %2$s account.","logoutText":"Log Out","loginText":"Log In","connectURL":"https:\/\/srikantmahapatra.wordpress.com\/public.api\/connect\/?action=request","logoutURL":"https:\/\/srikantmahapatra.wordpress.com\/wp-login.php?action=logout&_wpnonce=1339c28f1f","homeURL":"https:\/\/srikantmahapatra.wordpress.com\/","postID":"129","gravDefault":"identicon","enterACommentError":"Please enter a comment","enterEmailError":"Please enter your email address here","invalidEmailError":"Invalid email address","enterAuthorError":"Please enter your name here","gravatarFromEmail":"This picture will show whenever you leave a comment. Click to customize it.","logInToExternalAccount":"Log in to use details from one of these accounts.","change":"Change","changeAccount":"Change Account","comment_registration":"0","userIsLoggedIn":"","isJetpack":"0","text_direction":"ltr"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="Ruby%20on%20Rails%20Interview%20Questions%20and%20Answers%20%7C%20Srikanta%20Mahapatro_files/a"></script>
+
+	<div id="bit" class="loggedout-follow-normal">
+		<a class="bsub" href="javascript:void(0)"><span id="bsub-text">Follow</span></a>
+		<div id="bitsubscribe">
+
+					<h3><label for="loggedout-follow-field">Follow “Srikanta Mahapatro”</label></h3>
+
+			<form action="https://subscribe.wordpress.com" method="post" accept-charset="utf-8" id="loggedout-follow">
+			<p>Get every new post delivered to your Inbox.</p>
+
+			<p id="loggedout-follow-error" style="display: none;"></p>
+
+			
+			<p><input name="email" placeholder="Enter your email address" id="loggedout-follow-field" type="email"></p>
+
+			<input name="action" value="subscribe" type="hidden">
+			<input name="blog_id" value="48740664" type="hidden">
+			<input name="source" value="https://srikantmahapatra.wordpress.com/2013/11/07/ruby-on-rails-interview-questions-and-answers/" type="hidden">
+			<input name="sub-type" value="loggedout-follow" type="hidden">
+
+			<input id="_wpnonce" name="_wpnonce" value="05ed72ce00" type="hidden"><input name="_wp_http_referer" value="/2013/11/07/ruby-on-rails-interview-questions-and-answers/" type="hidden">
+			<p id="bsub-subscribe-button"><input value="Sign me up" type="submit"></p>
+			</form>
+					<div id="bsub-credit"><a href="https://wordpress.com/?ref=lof">Build a website with WordPress.com</a></div>
+		</div><!-- #bitsubscribe -->
+	</div><!-- #bit -->
+
+	<script type="text/javascript">
+		window.WPCOM_sharing_counts = {"https:\/\/srikantmahapatra.wordpress.com\/2013\/11\/07\/ruby-on-rails-interview-questions-and-answers\/":129};
+	</script>
+		<script type="text/javascript">
+			var windowOpen;
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-facebook' ).on( 'click', function() {
+				if ( 'undefined' !== typeof windowOpen ){ // If there's another sharing window open, close it.
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery(this).attr( 'href' ), 'wpcomfacebook', 'menubar=1,resizable=1,width=600,height=400' );
+				return false;
+			});
+		});
+		</script>
+				<script type="text/javascript">
+			var windowOpen;
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-twitter' ).on( 'click', function() {
+				if ( 'undefined' !== typeof windowOpen ){ // If there's another sharing window open, close it.
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery(this).attr( 'href' ), 'wpcomtwitter', 'menubar=1,resizable=1,width=600,height=350' );
+				return false;
+			});
+		});
+		</script>
+				<script type="text/javascript">
+			var windowOpen;
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-linkedin' ).on( 'click', function() {
+				if ( 'undefined' !== typeof windowOpen ){ // If there's another sharing window open, close it.
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery(this).attr( 'href' ), 'wpcomlinkedin', 'menubar=1,resizable=1,width=580,height=450' );
+				return false;
+			});
+		});
+		</script>
+				<script type="text/javascript">
+			var windowOpen;
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-google-plus-1' ).on( 'click', function() {
+				if ( 'undefined' !== typeof windowOpen ){ // If there's another sharing window open, close it.
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery(this).attr( 'href' ), 'wpcomgoogle-plus-1', 'menubar=1,resizable=1,width=480,height=550' );
+				return false;
+			});
+		});
+		</script>
+			
+		<iframe src="Ruby%20on%20Rails%20Interview%20Questions%20and%20Answers%20%7C%20Srikanta%20Mahapatro_files/master.html" scrolling="no" id="likes-master" name="likes-master" style="display:none;"></iframe>
+		<div id="likes-other-gravatars"><div class="likes-text"><span>%d</span> bloggers like this:</div><ul class="wpl-avatars sd-like-gravatars"></ul></div>
+		<script type="text/javascript">
+		//<![CDATA[
+			var jetpackLikesWidgetQueue = [];
+			var jetpackLikesWidgetBatch = [];
+			var jetpackLikesMasterReady = false;
+
+			function JetpackLikespostMessage( message, target ) {
+				if ( "string" === typeof message ){
+					try{
+						message = JSON.parse( message );
+					}
+					catch(e) {
+						return;
+					}
+				}
+
+				pm( {
+					target: target,
+					type: 'likesMessage',
+					data: message,
+					origin: '*'
+				} );
+			}
+
+			function JetpackLikesBatchHandler() {
+				var requests = [];
+				jQuery( 'div.jetpack-likes-widget-unloaded' ).each( function( i ) {
+					if ( jetpackLikesWidgetBatch.indexOf( this.id ) > -1 )
+						return;
+					jetpackLikesWidgetBatch.push( this.id );
+					var regex = /like-(post|comment)-wrapper-(\d+)-(\d+)-(\w+)/;
+					var match = regex.exec( this.id );
+					if ( ! match || match.length != 5 )
+						return;
+
+					var info = {
+						blog_id: match[2],
+						width:   this.width
+					};
+
+					if ( 'post' == match[1] ) {
+						info.post_id = match[3];
+					} else if ( 'comment' == match[1] ) {
+						info.comment_id = match[3];
+					}
+
+					info.obj_id = match[4];
+
+					requests.push( info );
+				});
+
+				if ( requests.length > 0 ) {
+					JetpackLikespostMessage( { event: 'initialBatch', requests: requests }, window.frames['likes-master'] );
+				}
+			}
+
+			function JetpackLikesMessageListener( event ) {
+				if ( "undefined" == typeof event.event )
+					return;
+
+				if ( 'masterReady' == event.event ) {
+					jQuery( document ).ready( function() {
+						jetpackLikesMasterReady = true;
+
+						var stylesData = {
+								event: 'injectStyles'
+						};
+
+						if ( jQuery( 'iframe.admin-bar-likes-widget' ).length > 0 ) {
+							JetpackLikespostMessage( { event: 'adminBarEnabled' }, window.frames[ 'likes-master' ] );
+
+							stylesData.adminBarStyles = {
+								background: jQuery( '#wpadminbar .quicklinks li#wp-admin-bar-wpl-like > a' ).css( 'background' ),
+								isRtl: ( 'rtl' == jQuery( '#wpadminbar' ).css( 'direction' ) )
+							};
+						}
+
+						if ( !window.addEventListener )
+							jQuery( '#wp-admin-bar-admin-bar-likes-widget' ).hide();
+
+						stylesData.textStyles = {
+							color: jQuery( '.sd-text-color').css( 'color' ),
+							fontFamily: jQuery( '.sd-text-color' ).css( 'font-family' ),
+							fontSize: jQuery( '.sd-text-color' ).css( 'font-size' ),
+							direction: jQuery( '.sd-text-color' ).css( 'direction' ),
+							fontWeight: jQuery( '.sd-text-color' ).css( 'font-weight' ),
+							fontStyle: jQuery( '.sd-text-color' ).css( 'font-style' ),
+							textDecoration: jQuery( '.sd-text-color' ).css('text-decoration')
+						};
+
+						stylesData.linkStyles = {
+							color: jQuery( '.sd-link-color' ).css('color'),
+							fontFamily: jQuery( '.sd-link-color' ).css('font-family'),
+							fontSize: jQuery( '.sd-link-color' ).css('font-size'),
+							textDecoration: jQuery( '.sd-link-color' ).css('text-decoration'),
+							fontWeight: jQuery( '.sd-link-color' ).css( 'font-weight' ),
+							fontStyle: jQuery( '.sd-link-color' ).css( 'font-style' )
+						};
+
+						JetpackLikespostMessage( stylesData, window.frames[ 'likes-master' ] );
+
+						JetpackLikesBatchHandler();
+
+						jQuery( document ).on( 'inview', 'div.jetpack-likes-widget-unloaded', function() {
+							jetpackLikesWidgetQueue.push( this.id );
+						});
+					});
+				}
+
+				if ( 'showLikeWidget' == event.event ) {
+					jQuery( '#' + event.id + ' .post-likes-widget-placeholder'  ).fadeOut( 'fast', function() {
+						jQuery( '#' + event.id + ' .post-likes-widget' ).fadeIn( 'fast', function() {
+							JetpackLikespostMessage( { event: 'likeWidgetDisplayed', blog_id: event.blog_id, post_id: event.post_id, obj_id: event.obj_id }, window.frames['likes-master'] );
+						});
+					});
+				}
+
+				if ( 'clickReblogFlair' == event.event ) {
+					wpcom_reblog.toggle_reblog_box_flair( event.obj_id );
+				}
+
+				if ( 'showOtherGravatars' == event.event ) {
+					var $container = jQuery( '#likes-other-gravatars' );
+					var $list = $container.find( 'ul' );
+
+					$container.hide();
+					$list.html( '' );
+
+					$container.find( '.likes-text span' ).text( event.total );
+
+					jQuery.each( event.likers, function( i, liker ) {
+						$list.append( '<li class="' + liker.css_class + '"><a href="' + liker.profile_URL + '" class="wpl-liker" rel="nofollow" target="_parent"><img src="' + liker.avatar_URL + '" alt="' + liker.name + '" width="30" height="30" style="padding-right: 3px;" /></a></li>');
+					} );
+
+					var offset = jQuery( "[name='" + event.parent + "']" ).offset();
+
+					$container.css( 'left', offset.left + event.position.left - 10 + 'px' );
+					$container.css( 'top', offset.top + event.position.top - 33 + 'px' );
+
+					var rowLength = Math.floor( event.width / 37 );
+					var height = ( Math.ceil( event.likers.length / rowLength ) * 37 ) + 13;
+					if ( height > 204 ) {
+						height = 204;
+					}
+
+					$container.css( 'height', height + 'px' );
+					$container.css( 'width', rowLength * 37 - 7 + 'px' );
+
+					$list.css( 'width', rowLength * 37 + 'px' );
+
+					$container.fadeIn( 'slow' );
+
+					var scrollbarWidth = $list[0].offsetWidth - $list[0].clientWidth;
+					if ( scrollbarWidth > 0 ) {
+						$container.width( $container.width() + scrollbarWidth );
+						$list.width( $list.width() + scrollbarWidth );
+					}
+				}
+			}
+
+			pm.bind( 'likesMessage', function(e) { JetpackLikesMessageListener(e); } );
+
+			jQuery( document ).click( function( e ) {
+				var $container = jQuery( '#likes-other-gravatars' );
+
+				if ( $container.has( e.target ).length === 0 ) {
+					$container.fadeOut( 'slow' );
+				}
+			});
+
+			function JetpackLikesWidgetQueueHandler() {
+				var wrapperID;
+				if ( ! jetpackLikesMasterReady ) {
+					setTimeout( JetpackLikesWidgetQueueHandler, 500 );
+					return;
+				}
+
+				if ( jetpackLikesWidgetQueue.length > 0 ) {
+					// We may have a widget that needs creating now
+					var found = false;
+					while( jetpackLikesWidgetQueue.length > 0 ) {
+						// Grab the first member of the queue that isn't already loading.
+						wrapperID = jetpackLikesWidgetQueue.splice( 0, 1 )[0];
+						if ( jQuery( '#' + wrapperID ).hasClass( 'jetpack-likes-widget-unloaded' ) ) {
+							found = true;
+							break;
+						}
+					}
+					if ( ! found ) {
+						setTimeout( JetpackLikesWidgetQueueHandler, 500 );
+						return;
+					}
+				} else if ( jQuery( 'div.jetpack-likes-widget-unloaded' ).length > 0 ) {
+					// Grab any unloaded widgets for a batch request
+					JetpackLikesBatchHandler();
+
+					// Get the next unloaded widget
+					wrapperID = jQuery( 'div.jetpack-likes-widget-unloaded' ).first()[0].id;
+					if ( ! wrapperID ) {
+						// Everything is currently loaded
+						setTimeout( JetpackLikesWidgetQueueHandler, 500 );
+						return;
+					}
+				}
+
+				if ( 'undefined' === typeof wrapperID ) {
+					setTimeout( JetpackLikesWidgetQueueHandler, 500 );
+					return;
+				}
+
+				var $wrapper = jQuery( '#' + wrapperID );
+				$wrapper.find( 'iframe' ).remove();
+
+				if ( $wrapper.hasClass( 'slim-likes-widget' ) ) {
+					$wrapper.find( '.post-likes-widget-placeholder' ).after( "<iframe class='post-likes-widget jetpack-likes-widget' name='" + $wrapper.data( 'name' ) + "' height='22px' width='68px' frameBorder='0' scrolling='no' src='" + $wrapper.data( 'src' ) + "'></iframe>" );
+				} else {
+					$wrapper.find( '.post-likes-widget-placeholder' ).after( "<iframe class='post-likes-widget jetpack-likes-widget' name='" + $wrapper.data( 'name' ) + "' height='55px' width='100%' frameBorder='0' src='" + $wrapper.data( 'src' ) + "'></iframe>" );
+				}
+
+				$wrapper.removeClass( 'jetpack-likes-widget-unloaded' ).addClass( 'jetpack-likes-widget-loading' );
+
+				$wrapper.find( 'iframe' ).load( function( e ) {
+					var $iframe = jQuery( e.target );
+					$wrapper.removeClass( 'jetpack-likes-widget-loading' ).addClass( 'jetpack-likes-widget-loaded' );
+
+					JetpackLikespostMessage( { event: 'loadLikeWidget', name: $iframe.attr( 'name' ), width: $iframe.width() }, window.frames[ 'likes-master' ] );
+
+					if ( $wrapper.hasClass( 'slim-likes-widget' ) ) {
+						$wrapper.find( 'iframe' ).Jetpack( 'resizeable' );
+					}
+				});
+				setTimeout( JetpackLikesWidgetQueueHandler, 250 );
+			}
+			JetpackLikesWidgetQueueHandler();
+		//]]>
+		</script>
+<script type="text/javascript" src="Ruby%20on%20Rails%20Interview%20Questions%20and%20Answers%20%7C%20Srikanta%20Mahapatro_files/form.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var JetpackEmojiSettings = {"base_url":"https:\/\/s0.wp.com\/wp-content\/mu-plugins\/emoji\/twemoji\/"};
+/* ]]> */
+</script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var sharing_js_options = {"lang":"en","counts":"1"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="Ruby%20on%20Rails%20Interview%20Questions%20and%20Answers%20%7C%20Srikanta%20Mahapatro_files/a_002"></script>
+<script type="text/javascript">
+// <![CDATA[
+(function() {
+try{
+  if ( window.external &&'msIsSiteMode' in window.external) {
+    if (window.external.msIsSiteMode()) {
+      var jl = document.createElement('script');
+      jl.type='text/javascript';
+      jl.async=true;
+      jl.src='/wp-content/plugins/ie-sitemode/custom-jumplist.php';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(jl, s);
+    }
+  }
+}catch(e){}
+})();
+// ]]>
+</script>	<script type="text/javascript">
+	var skimlinks_pub_id = "725X584219"
+	var skimlinks_sitename = "srikantmahapatra.wordpress.com";
+	</script>
+	<script type="text/javascript" src="Ruby%20on%20Rails%20Interview%20Questions%20and%20Answers%20%7C%20Srikanta%20Mahapatro_files/725X1342.js"></script><script src="Ruby%20on%20Rails%20Interview%20Questions%20and%20Answers%20%7C%20Srikanta%20Mahapatro_files/w.js" type="text/javascript" async="" defer="defer"></script>
+<script type="text/javascript">
+_tkq = window._tkq || [];
+_stq = window._stq || [];
+_tkq.push(['storeContext', {'blog_id':'48740664','blog_tz':'0','user_lang':'en','blog_lang':'en','user_id':'0'}]);
+_stq.push(['view', {'blog':'48740664','v':'wpcom','tz':'0','user_id':'0','post':'129','subd':'srikantmahapatra'}]);
+_stq.push(['extra', {'crypt':'UE40eW5QN0p8M2Y/RE1lYixwbDJzRz1JUC9FMkZqenQuYk1UYVdkfGx2QX44RFRqVUxWc0RGNmU9WjUmbEVhcUxZLi5vUT02OXAtVU4vXVEwdXUuOFQvY292RzE/bTk1L2VlLnR6QkUsbDdSejJMclp1JjF8LWJsMi1MWEE1Ll83OXVBTy5vV3pYekVlV1R2XXJRUTU0VTVTZXMsb11JNWZLMzdGWHJGP3FTbTRia2dpUnZsV2UxZGlZVCxNbXRRNlpPYWNKVW9zZHNZMGg3YTBzY1RQNW9qQzVZMDBqRk9fQzJnXVRtYlVCTmt6WCVaWC8sLWEvW11EX0hDYWFnV29GW1gmLHNsR05SZ2UuajFNWnR6SENhW0hRMHVpWTVxUltHc0YvJmhxUDZsSnU9ZHk0NlNRJkJ4ayZGS3hFMENpbVkvR19NamlvPWo9WDBIWThOPzNsdCs4VkZvR1ZsbDhKL3w/NXBTaHMlVw=='}]);
+_stq.push([ 'clickTrackerInit', '48740664', '129' ]);
+	</script>
+<noscript><img src="https://pixel.wp.com/b.gif?v=noscript" style="height:0px;width:0px;overflow:hidden" alt="" /></noscript>
+<script>
+if ( 'object' === typeof wpcom_mobile_user_agent_info ) {
+
+	wpcom_mobile_user_agent_info.init();
+	var mobileStatsQueryString = "";
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedPlatformName )
+		mobileStatsQueryString += "&x_" + 'mobile_platforms' + '=' + wpcom_mobile_user_agent_info.matchedPlatformName;
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedUserAgentName )
+		mobileStatsQueryString += "&x_" + 'mobile_devices' + '=' + wpcom_mobile_user_agent_info.matchedUserAgentName;
+	
+	if( wpcom_mobile_user_agent_info.isIPad() )
+		mobileStatsQueryString += "&x_" + 'ipad_views' + '=' + 'views';
+
+	if( "" != mobileStatsQueryString ) {
+		new Image().src = document.location.protocol + '//pixel.wp.com/g.gif?v=wpcom-no-pv' + mobileStatsQueryString + '&baba=' + Math.random();
+	}
+	
+}
+</script>
+
+<div id="sharing_email" style="display: none;">
+		<form action="/2013/11/07/ruby-on-rails-interview-questions-and-answers/" method="post">
+			<label for="target_email">Send to Email Address</label>
+			<input name="target_email" id="target_email" type="email">
+
+			
+				<label for="source_name">Your Name</label>
+				<input name="source_name" id="source_name" type="text">
+
+				<label for="source_email">Your Email Address</label>
+				<input name="source_email" id="source_email" type="email">
+
+						<input id="jetpack-source_f_name" name="source_f_name" class="input" size="25" autocomplete="off" type="text">
+			<script> document.getElementById('jetpack-source_f_name').value = ''; </script>
+			<div class="recaptcha" id="sharing_recaptcha"></div><input name="recaptcha_public_key" id="recaptcha_public_key" value="6LcYW8MSAAAAADBAuEH9yaPcF7lWh11Iq62ZKtoo" type="hidden">
+			<img style="float: right; display: none" class="loading" src="Ruby%20on%20Rails%20Interview%20Questions%20and%20Answers%20%7C%20Srikanta%20Mahapatro_files/loading.gif" alt="loading" height="16" width="16">
+			<input value="Send Email" class="sharing_send" type="submit">
+			<a rel="nofollow" href="#cancel" class="sharing_cancel">Cancel</a>
+
+			<div class="errors errors-1" style="display: none;">
+				Post was not sent - check your email addresses!			</div>
+
+			<div class="errors errors-2" style="display: none;">
+				Email check failed, please try again			</div>
+
+			<div class="errors errors-3" style="display: none;">
+				Sorry, your blog cannot share posts by email.			</div>
+		</form>
+	</div><img id="wpstats" src="Ruby%20on%20Rails%20Interview%20Questions%20and%20Answers%20%7C%20Srikanta%20Mahapatro_files/g.gif"><a style="position: absolute; top: 847.05px; left: 974px; z-index: 15; border: medium none; text-decoration: none;" href="http://ibsoftservices.com/" rel="nofollow"></a></body></html>
