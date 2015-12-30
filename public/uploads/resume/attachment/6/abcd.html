@@ -1,0 +1,29 @@
+rails g migration AddDaysOfAppointmentsToAppoints DaysOfAppointments:string
+
+
+
+
+
+
+
+last:
+
+class AddDaysOfAppointmentsToAppoints < ActiveRecord::Migration
+def change
+add_column :appoints, :DaysOfAppointments, :string
+end
+end
+
+
+
+top:
+
+
+class AddDaysOfAppointmentsToAppoints < ActiveRecord::Migration
+def change
+add_column :appoints, :DaysOfAppointments, :string
+end
+end
+
+
+git rm db/migrate/20150919061955_add_days_of_appointments_to_appoints.rb

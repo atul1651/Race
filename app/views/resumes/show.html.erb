@@ -1,0 +1,8 @@
+
+
+
+<%= form_for @resume, :html => {:multipart => true} do |f| %>
+
+<%= image_tag resume.attachment_url(:thumb) if resume.attachment? %>
+
+<% end %>
